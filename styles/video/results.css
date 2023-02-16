@@ -17,7 +17,6 @@
     /* spacers */
     --spacerWidth: 1vh;
 
-
     /* normally these do not need to change */
     --categoryWidth: 9ch;
     --liftResultWidth: 6ch;
@@ -548,14 +547,19 @@ table.medals {
         /* team name */
         minmax(50px, var(--clubWidth))
         /* snatch results */
+        var(--spacerWidth)
         repeat(3, var(--liftResultWidth))
+        var(--bestWidth)
         /* one snatch rank per category */
         repeat(var(--nbRanks), var(--rankWidth))
         /* clean&jerk */
+        var(--spacerWidth)
         repeat(3, var(--liftResultWidth))
+        var(--bestWidth)
         /* one snatch rank per category */
         repeat(var(--nbRanks), var(--rankWidth))
         /* total */
+        var(--spacerWidth)
         repeat(1, var(--liftResultWidth))
         /* one total rank per category */
         repeat(var(--nbRanks), var(--totalRankWidth))
@@ -790,6 +794,10 @@ div.ellipsis {
     margin-bottom: 1.2rem;
     padding: 0.25em;
     padding-left: 0.5em;
+}
+
+.medals .video {
+    margin-bottom: 0.5rem;
 }
 
 /* table sizes: 1024 projector */
