@@ -951,7 +951,7 @@ div.ellipsis {
 :host(.dark) .recordLiftTypeSpacer {
     width: var(--recordValueCellWidth);
     text-align: center;
-    background-color: var(--darkRecordLiftTypeBackground);
+    background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordLiftTypeText);
     font-weight: normal;
     font-size: small;
@@ -976,6 +976,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
+    font-weight: bold;
 }
 
 :host(.dark) .recordTitle {
