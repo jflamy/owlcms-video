@@ -76,6 +76,55 @@
     line-height: unset;
 }
 
+.video {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: var(--videoHeaderBackgroundColor);
+    color: var(--videoHeaderTextColor);
+    margin-bottom: 1.2rem;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.video .eventlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    background-image: url('../../logos/event.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:white;
+    width: 70px;
+    height: 75px;
+    background-position: center;
+}
+
+.video .videoheader {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.video .federationlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    background-image: url('../../logos/federation.svg');
+    background-color:white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    margin-right:5px;
+    background-position: center;
+}
+
 /* table general parameters */
 table.results {
     border-collapse: collapse;
@@ -784,20 +833,6 @@ div.ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
-
-.video {
-    font-size: 1.6rem;
-    font-weight: bold;
-    background-color: var(--videoHeaderBackgroundColor);
-    color: var(--videoHeaderTextColor);
-    margin-bottom: 1.2rem;
-    padding: 0.25em;
-    padding-left: 0.5em;
-}
-
-.medals .video {
-    margin-bottom: 0.5rem;
 }
 
 /* table sizes: 1024 projector */
