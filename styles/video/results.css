@@ -32,8 +32,8 @@
     --custom2Width: 0;
     --custom2Visibility: hidden;
 
-    --rankWidth: 0;
-    --rankVisibility: hidden;
+    --rankWidth: var(--liftResultWidth);
+    --rankVisibility: visible;
     
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
