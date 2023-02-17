@@ -977,6 +977,7 @@ div.ellipsis {
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
     font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 :host(.dark) .recordTitle {
@@ -985,6 +986,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 :host(.dark) .recordBox {

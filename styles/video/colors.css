@@ -148,7 +148,7 @@
     /* records table section, black on white */
     /* by default, same as white on black */
 
-    --darkRecordBoxBorder: var(--darkTextColor);
+    --darkRecordBoxBorder: var(--darkEmptyBackgroundColor);
     --darkRecordBoxBackground: var(--darkEmptyBackgroundColor);
     --darkRecordBoxText: var(--darkTextColor);
 
