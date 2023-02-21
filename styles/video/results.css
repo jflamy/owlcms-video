@@ -23,8 +23,9 @@
 }
 
 .video {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
+    font-family: Texta;
     background-color: var(--videoHeaderBackgroundColor);
     color: var(--videoHeaderTextColor);
     margin-bottom: 1.2rem;
@@ -831,6 +832,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--lightRecordBoxBackground);
     color: var(--lightRecordBoxText);
+    border: 1px solid var(--darkRecordLiftTypeBorder);
 }
 
 :host(.light) .recordName {
@@ -888,7 +890,7 @@ div.ellipsis {
 :host(.dark) .recordLiftTypeSpacer {
     width: var(--recordValueCellWidth);
     text-align: center;
-    background-color: var(--darkRecordLiftTypeBackground);
+    background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordLiftTypeText);
     font-weight: normal;
     font-size: small;
@@ -958,12 +960,16 @@ div.ellipsis {
     background-color: var(--darkRecordHighlightBackground);
     color: var(--darkRecordHighlightText);
     z-index: var(--zIndexRecordNotifications);
+    font-family: Texta;
+    font-weight: bold;
 }
 
 :host(.dark) .recordNotification.attempt {
     background-color: var(--darkAttemptHighlightBackground);
     color: var(--darkAttemptHighlightText);
     z-index: var(--zIndexRecordNotifications);
+    font-family: Texta;
+    font-weight: bold;
 }
 
 :host(.light) .recordNotification.new {

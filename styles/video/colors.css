@@ -1,6 +1,6 @@
 * {
     --pageBackgroundColor: #00ff00;
-    --pageTextColor: black;
+    --pageTextColor: white;
 
     /* control record notification on scoreboard and attempt board.
        Set to 10 to show notifications, set to -10 if notifications not wanted */
@@ -74,7 +74,7 @@
 
     /* results table section, "white on black", most cells have same dark background as page */
 
-    --darkTableBorders: var(--pageTextColor);
+    --darkTableBorders: var(--darkEmptyBackgroundColor);
     --darkTextColor: white;
     --darkBackgroundColor: var(--darkEmptyBackgroundColor);
 
@@ -166,9 +166,20 @@
     --darkRecordHighlightBackground: green;
     --darkRecordHighlightText: white;
     --darkAttemptHighlightText: white;
-    --darkAttemptHighlightBackground: purple;
+    --darkAttemptHighlightBackground: #0D61A7;
 
     /* video header */
-    --videoHeaderBackgroundColor: darkblue;
+    --videoHeaderBackgroundColor: #0D61A7;
     --videoHeaderTextColor: white;
+}
+
+@font-face {
+    font-family: Texta;
+    src: url("../fonts/Texta-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Texta;
+    font-weight: bold;
+    src: url("../fonts/Texta-Regular.otf") format("opentype");
 }
