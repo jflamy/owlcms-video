@@ -120,7 +120,7 @@
     --darkTotalTextColor: white;
     --darkTotalBackgroundColor: blue;
 
-    --darkSpacerBackgroundColor: #00ff00;
+    --darkSpacerBackgroundColor: var(--pageBackgroundColor);
     --darkEmptyTextColor: #4d4d4d;
     --darkEmptyBackgroundColor: #4d4d4d;
 
