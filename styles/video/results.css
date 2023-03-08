@@ -859,6 +859,18 @@ div.ellipsis {
     color: var(--lightRecordBoxText);
 }
 
+:host(.light) .recordBoxPersonal {
+    float: left;
+    background-color: var(--lightRecordBoxBackground);
+    color: var(--darkRecordBoxText);
+}
+
+:host(.light) .recordBoxPersonal .recordCat {
+    border: 1px solid var(--lightRecordBoxBorder);
+    background-color: var(--pageBackgroundColor);
+    color: var(--darkRecordBoxText);
+}
+
 :host(.light) .highlight {
     background-color: var(--lightAttemptHighlightBackground) !important;
     color: var(--lightRecordValueText) !important;
