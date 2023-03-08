@@ -931,6 +931,17 @@ div.ellipsis {
 :host(.dark) .recordBox {
     float: left;
     border: 1px solid var(--darkRecordBoxBorder);
+    color: var(--darkRecordBoxText);
+}
+
+:host(.dark) .recordBoxPersonal {
+    float: left;
+    background-color: var(--pageBackgroundColor);
+    color: var(--darkRecordBoxText);
+}
+
+:host(.dark) .recordBoxPersonal .recordCat {
+    border: 1px solid var(--darkRecordBoxBorder);
     background-color: var(--darkRecordBoxBackground);
     color: var(--darkRecordBoxText);
 }
