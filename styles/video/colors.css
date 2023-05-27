@@ -3,7 +3,7 @@
     --pageTextColor: white;
 
         /* video header */
-    --videoHeaderBackgroundColor: #b9373b;
+    --videoHeaderBackgroundColor: #701114;
     --videoHeaderTextColor: white;
 
     /* control record notification on scoreboard and attempt board.
@@ -237,12 +237,12 @@
 }
 
 @font-face {
-    font-family: Texta;
-    src: url("../fonts/Texta-Regular.otf") format("opentype");
+    font-family: Teko;
+    src: url("../fonts/Teko-Regular.ttf") format("woff");
 }
 
 @font-face {
-    font-family: Texta;
+    font-family: Teko;
     font-weight: bold;
-    src: url("../fonts/Texta-Regular.otf") format("opentype");
+    src: url("../fonts/Teko-SemiBold.ttf") format("woff");
 }

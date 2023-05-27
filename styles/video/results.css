@@ -25,7 +25,7 @@
 .video {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Texta;
+    font-family: Teko;
     background-color: var(--videoHeaderBackgroundColor);
     color: var(--videoHeaderTextColor);
     margin-bottom: 1.2rem;
@@ -57,6 +57,7 @@
     flex-grow: 1;
 }
 
+/*
 .video .federationlogo {
     display: flex;
     align-items: center;
@@ -70,7 +71,7 @@
     height: 70px;
     margin-right:5px;
     background-position: center;
-}
+*/
 
 /* table general parameters */
 table.results {
@@ -1000,7 +1001,7 @@ div.ellipsis {
     background-color: var(--darkRecordHighlightBackground);
     color: var(--darkRecordHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-family: Texta;
+    font-family: Teko;
     font-weight: bold;
 }
 
@@ -1008,7 +1009,7 @@ div.ellipsis {
     background-color: var(--darkAttemptHighlightBackground);
     color: var(--darkAttemptHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-family: Texta;
+    font-family: Teko;
     font-weight: bold;
 }
 
