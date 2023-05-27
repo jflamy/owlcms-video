@@ -1,9 +1,9 @@
 * {
-    --pageBackgroundColor: #00ff00;
+    --pageBackgroundColor: #000000;
     --pageTextColor: white;
 
         /* video header */
-    --videoHeaderBackgroundColor: #701114;
+    --videoHeaderBackgroundColor: black;
     --videoHeaderTextColor: white;
 
     /* control record notification on scoreboard and attempt board.
