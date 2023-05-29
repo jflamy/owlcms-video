@@ -373,7 +373,7 @@ table.results.sinclair {
 /* spacer line above first leader/medalist */
 :host(.dark) table.results tr td.headerSpacer {
     background-color: var(--darkSpacerBackgroundColor);
-    padding: 0.4vmin 0.4vmin 0.4vmin 0.4vmin;
+    /* padding: 0.4vmin 0.4vmin 0.4vmin 0.4vmin; */
     margin-bottom: 0.01vh;
     border-right: 0;
     border: none;

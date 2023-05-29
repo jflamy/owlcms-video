@@ -33,8 +33,8 @@
     --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
 
-    --bestWidth: 0;
-    --bestVisibility: hidden;
+    --bestWidth: var(--liftResultWidth);
+    --bestVisibility: visible;
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
