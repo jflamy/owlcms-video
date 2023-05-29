@@ -28,15 +28,14 @@ table.results tr td div {
     display: table-cell;
     width: var(--rank-width);
     text-align: left;
-    background-color: var(--darkEmptyBackgroundColor);
-    background-color: green;
+    background-color: var(--darkBackgroundColor);
 }
 
 .showRank div, .totalRank div {
     margin-right: 0.8em;
     margin-left: 0.5em;
     border: none;
-    background-color: var(--darkEmptyBackgroundColor);
+    background-color: var(--darkBackgroundColor);
     color: var(--darkTextColor);
     font-size: var(--fontSizeRows-height);
 }
@@ -129,13 +128,12 @@ div > div.attemptBar > div.attempts > table > tr > td.totalRank {
 }
 
 .breakTime {
-    /* color: #99CCFF; */
-    color: SkyBlue;
+    color: var(--breakTimerColor)
     grid-column: 6/7;
 }
 
 .athleteTimer {
-    color: yellow;
+    color: var(--athleteTimerColor);
 }
 
 table.results {
