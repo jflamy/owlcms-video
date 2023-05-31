@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/whc.svg');
+    background-image: url('../../logos/WHC.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-color:white;
@@ -113,6 +113,7 @@ table.results.sinclair {
 /* default cell colors, backgrounds and borders */
 :host(.dark) table.results tr td, 
 :host(.dark) table.results tr th {
+    align-items: center;
     background-color: var(--darkBackgroundColor);
     color: var(--darkTextColor);
     border-width: 1px;
