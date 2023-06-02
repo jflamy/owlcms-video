@@ -167,7 +167,7 @@
     --darkRecordLiftTypeText: var(--darkTextColor);
     --darkRecordLiftTypeBorder: var(--darkTextColor);
 
-    --darkRecordHighlightBackground: green;
+    --darkRecordHighlightBackground: darkOrange;
     --darkRecordHighlightText: white;
     --darkAttemptHighlightText: white;
     --darkAttemptHighlightBackground: var(--videoHeaderBackgroundColor);
