@@ -39,8 +39,10 @@
     
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
-    /* --bestWidth: 0;
-    --bestVisibility: hidden; */
+    /*
+    --bestWidth: 0;
+    --bestVisibility: hidden;
+      */
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
