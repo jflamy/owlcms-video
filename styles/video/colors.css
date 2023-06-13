@@ -1,6 +1,7 @@
 * {
     --pageBackgroundColor: #00ff00;
     --pageTextColor: white;
+    --blockBackgroundColor: silver;
 
     /* video header */
     --videoHeaderBackgroundColor: #ab1a1f;
@@ -124,7 +125,7 @@
     --darkTotalTextColor: white;
     --darkTotalBackgroundColor: blue;
 
-    --darkSpacerBackgroundColor: var(--pageBackgroundColor);
+    --darkSpacerBackgroundColor: var(--blockBackgroundColor);
     --darkEmptyTextColor: #4d4d4d;
     --darkEmptyBackgroundColor: #4d4d4d;
 
@@ -160,7 +161,7 @@
     --darkRecordValueBackground: var(--darkEmptyBackgroundColor);
     --darkRecordCellBorderColor: var(--darkTextColor);
 
-    --darkRecordNameBackground: var(--pageBackgroundColor);
+    --darkRecordNameBackground: var(--blockBackgroundColor);
     --darkRecordNameText: white;
 
     --darkRecordLiftTypeBackground: var(--darkEmptyBackgroundColor);
