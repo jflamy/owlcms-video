@@ -19,6 +19,12 @@
     line-height: unset;
 }
 
+.blockPositioningWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .video {
     font-size: 2rem;
     font-weight: bold;
@@ -74,7 +80,7 @@
 table.results {
     border-collapse: collapse;
     font-size: var(--tableFontSize);
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: var(--rankWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;
@@ -87,7 +93,7 @@ table.results {
 table.results.noranks {
     --rankWidth: 0;
     --rankVisibility: hidden;
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: var(--rankWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;
@@ -139,11 +145,13 @@ table.results.sinclair {
 :host(.light) table.results tr td.start {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
+    visibility: var(--startVisibility);
 }
 
 :host(.dark) table.results tr td.start {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
+    visibility: var(--startVisibility);
 }
 
 /* name */
@@ -264,10 +272,12 @@ table.results.sinclair {
 :host(.light) table.results tr td.groupCol {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
+    visibility: var(--startVisibility);
 }
 :host(.dark) table.results tr td.groupCol {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
+    visibility: var(--startVisibility);
 }
 
 /* year of birth */
@@ -406,7 +416,7 @@ table.results.sinclair {
 
 /* filler space above leaders */
 :host(.dark) table.results tr td.filler {
-    background-color: var(--pageBackgroundColor);
+    background-color: var(--blockBackgroundColor);
     grid-column: 1 / -1;
     align-content: stretch;
     border: none;
@@ -416,7 +426,7 @@ table.results.sinclair {
 }
 
 :host(.light) table.results tr td.filler {
-    background-color: var(--pageBackgroundColor);
+    background-color: var(--blockBackgroundColor);
     grid-column: 1 / -1;
     align-content: stretch;
     border: none;
@@ -595,14 +605,14 @@ td {
 :host(.dark) table.results tr.head th.vspacer,
 :host(.dark) table.results tr.head td.vspacer {
     width: var(--spacerWidth);
-    background-color: var(--pageBackgroundColor);
+    background-color: var(--blockBackgroundColor);
     border: none;
 }
 
 :host(.dark) table.results tr th.vspacer,
 :host(.dark) table.results tr td.vspacer {
     width: var(--spacerWidth);
-    background-color: var(--pageBackgroundColor);
+    background-color: var(--blockBackgroundColor);
     border: none;
 }
 

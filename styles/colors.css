@@ -2,6 +2,7 @@
 * {
     --pageBackgroundColor: black;
     --pageTextColor: white;
+    --blockBackgroundColor: var(--pageBackgroundColor);
 
     /* video header (same as page if no transparency) */
     --videoHeaderBackgroundColor: var(--pageBackgroundColor);
@@ -125,7 +126,7 @@
     --darkTotalTextColor: white;
     --darkTotalBackgroundColor: blue;
 
-    --darkSpacerBackgroundColor: var(--pageBackgroundColor);
+    --darkSpacerBackgroundColor: var(--blockBackgroundColor);
     --darkEmptyTextColor: #4d4d4d;
     --darkEmptyBackgroundColor: #4d4d4d;
 

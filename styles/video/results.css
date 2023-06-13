@@ -19,6 +19,12 @@
     line-height: unset;
 }
 
+.blockPositioningWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .video {
     font-size: 2rem;
     font-weight: bold;
@@ -74,7 +80,7 @@
 table.results {
     border-collapse: collapse;
     font-size: var(--tableFontSize);
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: var(--rankWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;
@@ -87,7 +93,7 @@ table.results {
 table.results.noranks {
     --rankWidth: 0;
     --rankVisibility: hidden;
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: var(--rankWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;
@@ -266,10 +272,12 @@ table.results.sinclair {
 :host(.light) table.results tr td.groupCol {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
+    visibility: var(--startVisibility);
 }
 :host(.dark) table.results tr td.groupCol {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
+    visibility: var(--startVisibility);
 }
 
 /* year of birth */
