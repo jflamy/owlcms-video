@@ -93,3 +93,15 @@
     background-color: var(--blockBackgroundColor);
     min-height: 1.5em;
 }
+
+.waiting {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Teko;
+    background-color: var(--videoHeaderBackgroundColor);
+    color: var(--videoHeaderTextColor);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
