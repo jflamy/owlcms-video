@@ -8,7 +8,7 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 25ch;
+    --nameWidth: 30ch;
     --clubWidth: 7ch;
 
     /* left column width: adjust depending on how you name groups */
@@ -33,16 +33,11 @@
     --custom2Width: 0;
     --custom2Visibility: hidden;
 
-    --rankWidth: 4ch;
+    --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
-    --totalRankWidth: 4ch;
     
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
-    /*
-    --bestWidth: 0;
-    --bestVisibility: hidden;
-      */
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
@@ -98,5 +93,3 @@
     background-color: var(--blockBackgroundColor);
     min-height: 1.5em;
 }
-
-

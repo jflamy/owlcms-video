@@ -13,7 +13,7 @@
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: no-wrap;
     justify-content: flex-start;
     line-height: unset;

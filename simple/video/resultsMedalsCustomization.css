@@ -2,14 +2,12 @@
     /*************************
      * Customization section
      *************************/
-    --pageBackgroundColor: #00ff00;
-    --pageTextColor: white;
 
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 25ch;
-    --clubWidth: 7ch;
+    --nameWidth: 30ch;
+    --clubWidth: 10em;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -26,8 +24,8 @@
     - change hidden to visible
     - set the width to value like 8ch 
     */
-    --birthWidth: 0;
-    --birthVisibility: hidden;
+    --birthWidth: 6ch;
+    --birthVisibility: visible;
     --custom1Width: 0;
     --custom1Visibility: hidden;
     --custom2Width: 0;
@@ -92,4 +90,19 @@
 .filler {
     background-color: var(--blockBackgroundColor);
     min-height: 1.5em;
+}
+
+
+td.flags img {
+    height: 5vh;
+    margin: 1vh;
+    align-self: center;
+}
+td.flags div {
+    height: 7vh;
+    line-height: 7vh;
+    align-self: center;
+}
+td.name.flags {
+    font-size: 120%;
 }
