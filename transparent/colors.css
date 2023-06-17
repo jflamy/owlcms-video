@@ -174,3 +174,14 @@
     --darkAttemptHighlightText: white;
     --darkAttemptHighlightBackground: var(--videoHeaderBackgroundColor);
 }
+
+@font-face {
+    font-family: Teko;
+    src: url("../fonts/Teko-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: Teko;
+    font-weight: bold;
+    src: url("../fonts/Teko-SemiBold.ttf") format("woff");
+}

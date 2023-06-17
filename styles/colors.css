@@ -1,8 +1,7 @@
-/* modern style dark mode without borders */
+/* old style dark mode with borders */
 * {
     --pageBackgroundColor: black;
     --pageTextColor: white;
-    --blockBackgroundColor: var(--pageBackgroundColor);
 
     /* video header (same as page if no transparency) */
     --videoHeaderBackgroundColor: var(--pageBackgroundColor);
@@ -80,21 +79,21 @@
 
     /* results table section, "white on black", most cells have same dark background as page */
 
-    --darkTableBorders: var(--darkEmptyBackgroundColor);
-    --darkTextColor: white;
-    --darkBackgroundColor: var(--darkEmptyBackgroundColor);
+    --darkTableBorders: var(--pageTextColor);
+    --darkTextColor: var(--pageTextColor);
+    --darkBackgroundColor: var(--pageBackgroundColor);
 
     --darkTitleTextColor: var(--darkTextColor);
     --darkTitleBackgroundColor: var(--darkBackgroundColor);
 
     --darkCurrentTextColor: yellow;
-    --darkCurrentBackgroundColor: var(--darkEmptyBackgroundColor);
+    --darkCurrentBackgroundColor: var(--darkBackgroundColor);
 
     --darkNextTextColor: orange;
-    --darkNextBackgroundColor: var(--darkEmptyBackgroundColor);
+    --darkNextBackgroundColor: var(--darkBackgroundColor);
 
-    --darkRequestTextColor: silver;
-    --darkRequestBackgroundColor: var(--darkEmptyBackgroundColor);
+    --darkRequestTextColor: var(--darkTextColor);
+    --darkRequestBackgroundColor: var(--darkBackgroundColor);
 
     --darkStartBackgroundColor: var(--darkBackgroundColor);
     --darkStartTextColor: var(--darkTextColor);
@@ -111,8 +110,8 @@
     --darkTeamTextColor: var(--darkTextColor);
     --darkTeamBackgroundColor: var(--darkBackgroundColor);
 
-    --darkGoodTextColor: black;
-    --darkGoodBackgroundColor: white;
+    --darkGoodTextColor: white;
+    --darkGoodBackgroundColor: green;
 
     --darkFailTextColor: white;
     --darkFailBackgroundColor: darkred;
@@ -123,10 +122,10 @@
     --darkTotalRankTextColor: var(--darkTextColor);
     --darkTotalRankBackgroundColor: var(--darkBackgroundColor);
 
-    --darkTotalTextColor: white;
+    --darkTotalTextColor: var(--darkGoodTextColor);
     --darkTotalBackgroundColor: blue;
 
-    --darkSpacerBackgroundColor: var(--blockBackgroundColor);
+    --darkSpacerBackgroundColor: var(--darkBackgroundColor);
     --darkEmptyTextColor: #4d4d4d;
     --darkEmptyBackgroundColor: #4d4d4d;
 
@@ -154,23 +153,23 @@
     /* records table section, black on white */
     /* by default, same as white on black */
 
-    --darkRecordBoxBorder: var(--darkEmptyBackgroundColor);
-    --darkRecordBoxBackground: var(--darkEmptyBackgroundColor);
-    --darkRecordBoxText: var(--darkTextColor);
+    --darkRecordBoxBorder: var(--pageTextColor);
+    --darkRecordBoxBackground: var(--pageBackgroundColor);
+    --darkRecordBoxText: var(--pageTextColor);
 
-    --darkRecordValueText: var(--darkTextColor);
-    --darkRecordValueBackground: var(--darkEmptyBackgroundColor);
-    --darkRecordCellBorderColor: var(--darkTextColor);
+    --darkRecordValueText: var(--pageTextColor);
+    --darkRecordValueBackground: var(--pageBackgroundColor);
+    --darkRecordCellBorderColor: var(--pageTextColor);
 
     --darkRecordNameBackground: var(--pageBackgroundColor);
-    --darkRecordNameText: white;
+    --darkRecordNameText: var(--pageTextColor);
 
-    --darkRecordLiftTypeBackground: var(--darkEmptyBackgroundColor);
-    --darkRecordLiftTypeText: var(--darkTextColor);
-    --darkRecordLiftTypeBorder: var(--darkTextColor);
+    --darkRecordLiftTypeBackground: var(--pageBackgroundColor);
+    --darkRecordLiftTypeText: var(--pageTextColor);
+    --darkRecordLiftTypeBorder: var(--pageTextColor);
 
     --darkRecordHighlightBackground: green;
     --darkRecordHighlightText: white;
     --darkAttemptHighlightText: white;
-    --darkAttemptHighlightBackground: var(--videoHeaderBackgroundColor);
+    --darkAttemptHighlightBackground: purple;
 }

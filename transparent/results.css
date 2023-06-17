@@ -28,6 +28,7 @@
 .video {
     font-size: 2rem;
     font-weight: bold;
+    font-family: Teko;
     background-color: var(--videoHeaderBackgroundColor);
     color: var(--videoHeaderTextColor);
     margin-bottom: 1.2rem;
@@ -1008,6 +1009,7 @@ div.ellipsis {
     background-color: var(--darkRecordHighlightBackground);
     color: var(--darkRecordHighlightText);
     z-index: var(--zIndexRecordNotifications);
+    font-family: Teko;
     font-weight: bold;
 }
 
@@ -1015,6 +1017,7 @@ div.ellipsis {
     background-color: var(--darkAttemptHighlightBackground);
     color: var(--darkAttemptHighlightText);
     z-index: var(--zIndexRecordNotifications);
+    font-family: Teko;
     font-weight: bold;
 }
 

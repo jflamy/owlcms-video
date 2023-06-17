@@ -26,7 +26,7 @@
 }
 
 .video {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     background-color: var(--videoHeaderBackgroundColor);
     color: var(--videoHeaderTextColor);
@@ -43,13 +43,6 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/WHC.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color:white;
-    width: 70px;
-    height: 75px;
-    background-position: center;
 }
 
 .video .videoheader {
@@ -59,21 +52,12 @@
     flex-grow: 1;
 }
 
-/*
 .video .federationlogo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/federation.svg');
-    background-color:white;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
-    margin-right:5px;
-    background-position: center;
-*/
+}
 
 /* table general parameters */
 table.results {
@@ -116,7 +100,7 @@ table.results.sinclair {
 }
 
 /* default cell colors, backgrounds and borders */
-:host(.dark) table.results tr td, 
+:host(.dark) table.results tr td,
 :host(.dark) table.results tr th {
     align-items: center;
     background-color: var(--darkBackgroundColor);
@@ -273,6 +257,7 @@ table.results.sinclair {
     color: var(--lightStartTextColor);
     visibility: var(--startVisibility);
 }
+
 :host(.dark) table.results tr td.groupCol {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
@@ -329,6 +314,7 @@ table.results.sinclair {
     color: var(--darkTextColor);
     visibility: var(--sinclairVisibility);
 }
+
 :host(.dark) table.results .nosinclair tr td.sinclair,
 :host(.dark) table.results .nosinclair tr th.sinclair {
     visibility: hidden;
@@ -340,6 +326,7 @@ table.results.sinclair {
     color: var(--lightTextColor);
     visibility: var(--sinclairVisibility);
 }
+
 :host(.light) table.results .nosinclair tr td.sinclair,
 :host(.light) table.results .nosinclair tr th.sinclair {
     visibility: hidden;
@@ -352,6 +339,7 @@ table.results.sinclair {
     color: var(--darkRankTextColor);
     visibility: var(--sinclairRankVisibility);
 }
+
 :host(.dark) table.results .nosinclair tr td.sinclairRank,
 :host(.dark) table.results .nosinclair tr th.sinclairRank {
     visibility: hidden;
@@ -383,8 +371,7 @@ table.results.sinclair {
 /* spacer line above first leader/medalist */
 :host(.dark) table.results tr td.headerSpacer {
     background-color: var(--darkSpacerBackgroundColor);
-    /* padding: 0.4vmin 0.4vmin 0.4vmin 0.4vmin; */
-    margin-bottom: 0.01vh;
+    padding: 0.2vh 0;
     border-right: 0;
     border: none;
     max-height: 2px;
@@ -397,10 +384,11 @@ table.results.sinclair {
     max-height: 2px;
 }
 
+
 /* spacer line between categories */
 :host(.dark) table.results tr td.spacer {
     background-color: var(--darkSpacerBackgroundColor);
-    padding: 0.2vmin 0.2vmin 0.2vmin 0.2vmin;
+    padding: 0.4vmin 0.4vmin 0.4vmin 0.4vmin;
     border-right: 0;
     border: none;
     max-height: 2px;
@@ -415,7 +403,7 @@ table.results.sinclair {
 
 /* filler space above leaders */
 :host(.dark) table.results tr td.filler {
-    background-color: var(--blockBackgroundColor);
+    background-color: var(--pageBackgroundColor);
     grid-column: 1 / -1;
     align-content: stretch;
     border: none;
@@ -425,7 +413,7 @@ table.results.sinclair {
 }
 
 :host(.light) table.results tr td.filler {
-    background-color: var(--blockBackgroundColor);
+    background-color: var(--pageBackgroundColor);
     grid-column: 1 / -1;
     align-content: stretch;
     border: none;
@@ -440,6 +428,7 @@ table.results.sinclair {
     color: var(--darkRequestTextColor);
     font-style: italic;
 }
+
 :host(.light) table.results tr td.request {
     background-color: var(--lightRequestBackgroundColor);
     color: var(--lightRequestTextColor);
@@ -604,14 +593,14 @@ td {
 :host(.dark) table.results tr.head th.vspacer,
 :host(.dark) table.results tr.head td.vspacer {
     width: var(--spacerWidth);
-    background-color: var(--blockBackgroundColor);
+    background-color: var(--pageBackgroundColor);
     border: none;
 }
 
 :host(.dark) table.results tr th.vspacer,
 :host(.dark) table.results tr td.vspacer {
     width: var(--spacerWidth);
-    background-color: var(--blockBackgroundColor);
+    background-color: var(--pageBackgroundColor);
     border: none;
 }
 
@@ -857,7 +846,6 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--lightRecordBoxBackground);
     color: var(--lightRecordBoxText);
-    border: 1px solid var(--darkRecordLiftTypeBorder);
 }
 
 :host(.light) .recordName {
@@ -927,7 +915,7 @@ div.ellipsis {
 :host(.dark) .recordLiftTypeSpacer {
     width: var(--recordValueCellWidth);
     text-align: center;
-    background-color: var(--darkRecordNameBackground);
+    background-color: var(--darkRecordLiftTypeBackground);
     color: var(--darkRecordLiftTypeText);
     font-weight: normal;
     font-size: small;
@@ -952,8 +940,6 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 :host(.dark) .recordTitle {
@@ -962,7 +948,6 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 :host(.dark) .recordBox {
@@ -1008,14 +993,12 @@ div.ellipsis {
     background-color: var(--darkRecordHighlightBackground);
     color: var(--darkRecordHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-weight: bold;
 }
 
 :host(.dark) .recordNotification.attempt {
     background-color: var(--darkAttemptHighlightBackground);
     color: var(--darkAttemptHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-weight: bold;
 }
 
 :host(.light) .recordNotification.new {
