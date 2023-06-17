@@ -72,6 +72,17 @@
     justify-items: center;
 }
 
+.video .videoheader {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
 .video .eventlogo {
     display: flex;
     align-items: center;
@@ -84,17 +95,6 @@
     width: 70px;
     height: 75px;
     background-position: center;
-}
-
-.video .videoheader {
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-direction: column;
-    text-align: center;
 }
 
 .video .federationlogo {

@@ -39,12 +39,23 @@
     justify-items: center;
 }
 
+.video .videoheader {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
 .video .eventlogo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/WHC.svg');
+    background-image: url('../../logos/sudamericana.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color:white;
@@ -53,20 +64,12 @@
     background-position: center;
 }
 
-.video .videoheader {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-/*
 .video .federationlogo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/federation.svg');
+    background-image: url('../../logos/felp.png');
     background-color:white;
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,7 +77,7 @@
     height: 70px;
     margin-right:5px;
     background-position: center;
-*/
+}
 
 /* table general parameters */
 table.results {

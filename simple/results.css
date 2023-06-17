@@ -38,12 +38,20 @@
     justify-items: center;
 }
 
+.video .videoheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .video .eventlogo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/WHC.svg');
+    background-image: url('../../logos/event.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-color:white;
@@ -52,14 +60,6 @@
     background-position: center;
 }
 
-.video .videoheader {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-/*
 .video .federationlogo {
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@
     height: 70px;
     margin-right:5px;
     background-position: center;
-*/
+}
 
 /* table general parameters */
 table.results {
