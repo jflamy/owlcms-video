@@ -6,8 +6,10 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 30ch;
+    --nameWidth: 35ch;
     --clubWidth: 10em;
+    /* define this if you use acronyms and want flags to line up */
+    --teamNameShortLength: 4ch;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -61,6 +63,17 @@
     --rowSmallSpacerHeight: 0.25vh;
 }
 
+td.flags img {
+    height: 5vh;
+    margin: 1vh;
+    align-self: center;
+}
+td.flags div {
+    height: 7vh;
+    line-height: 7vh;
+    align-self: center;
+}
+
 /* default for page */
 .wrapper {
     /* results table font size */
@@ -79,6 +92,10 @@
     line-height: unset;
 }
 
+td.name.flags {
+    font-size: 120%;
+}
+
 .blockPositioningWrapper {
     background-color: var(--blockBackgroundColor);
     width: fit-content;
@@ -90,19 +107,4 @@
 .filler {
     background-color: var(--blockBackgroundColor);
     min-height: 1.5em;
-}
-
-
-td.flags img {
-    height: 5vh;
-    margin: 1vh;
-    align-self: center;
-}
-td.flags div {
-    height: 7vh;
-    line-height: 7vh;
-    align-self: center;
-}
-td.name.flags {
-    font-size: 120%;
 }

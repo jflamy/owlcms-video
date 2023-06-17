@@ -237,6 +237,10 @@ table.results.sinclair {
     color: var(--lightTeamTextColor);
 }
 
+table.results tr td.club div.ellipsis {
+    width: var(--teamNameShortLength);
+}
+
 /* good/bad cells */
 :host(.dark) table.results tr td.good {
     background-color: var(--darkGoodBackgroundColor);
