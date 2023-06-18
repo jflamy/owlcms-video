@@ -135,6 +135,7 @@ table.results.sinclair {
 
 :host(.light) table.results tr td,
 :host(.light) table.results tr th {
+    align-items: center;
     background-color: var(--lightBackgroundColor);
     color: var(--lightTextColor);
     border-width: 1px;
@@ -1016,7 +1017,6 @@ div.ellipsis {
     background-color: var(--darkRecordHighlightBackground);
     color: var(--darkRecordHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-family: Teko;
     font-weight: bold;
 }
 
@@ -1024,7 +1024,6 @@ div.ellipsis {
     background-color: var(--darkAttemptHighlightBackground);
     color: var(--darkAttemptHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-family: Teko;
     font-weight: bold;
 }
 

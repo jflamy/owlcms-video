@@ -51,10 +51,10 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/event.svg');
+    background-image: url('../../logos/left.png');
+    /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
-    background-color:white;
     width: 70px;
     height: 75px;
     background-position: center;
@@ -65,8 +65,8 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/federation.svg');
-    background-color:white;
+    background-image: url('../../logos/right.png');
+    /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
     width: 70px;
@@ -74,6 +74,7 @@
     margin-right:5px;
     background-position: center;
 }
+
 
 /* table general parameters */
 table.results {
@@ -131,6 +132,7 @@ table.results.sinclair {
 
 :host(.light) table.results tr td,
 :host(.light) table.results tr th {
+    align-items: center;
     background-color: var(--lightBackgroundColor);
     color: var(--lightTextColor);
     border-width: 1px;
@@ -200,7 +202,8 @@ table.results.sinclair {
 }
 
 table.results tr td.club div.ellipsis {
-    width: var(--teamNameShortLength);
+    width: unset;
+    max-width: unset;
 }
 
 /* good/bad cells */
@@ -509,48 +512,6 @@ table {
         repeat(var(--top), min-content) 1fr repeat(var(--bottom), var(--leaderLineHeight));
     grid-template-columns:
         /* start */
-        var(--startWidth)
-        /* name */
-        minmax(50px, var(--nameWidth))
-        /* category */
-        var(--categoryWidth)
-        /* birth */
-        var(--birthWidth)
-        /* custom fields */
-        var(--custom1Width) var(--custom2Width)
-        /* team name */
-        minmax(50px, var(--clubWidth))
-        /* snatch results */
-        var(--spacerWidth)
-        repeat(3, var(--liftResultWidth))
-        var(--bestWidth)
-        /* one snatch rank per category */
-        repeat(var(--nbRanks), var(--rankWidth))
-        /* clean&jerk */
-        var(--spacerWidth)
-        repeat(3, var(--liftResultWidth))
-        var(--bestWidth)
-        /* one snatch rank per category */
-        repeat(var(--nbRanks), var(--rankWidth))
-        /* total */
-        var(--spacerWidth)
-        repeat(1, var(--liftResultWidth))
-        /* one total rank per category */
-        repeat(var(--nbRanks), var(--totalRankWidth))
-        /* sinclair result */
-        var(--sinclairWidth)
-        /* sinclair ranks */
-        var(--sinclairRankWidth);
-}
-
-/* grid layout */
-table.medals {
-    /* do not use all available vertical space */
-    flex: 0;
-    display: grid;
-    border-collapse: collapse;
-    grid-template-columns:
-        /* group */
         var(--startWidth)
         /* name */
         minmax(50px, var(--nameWidth))
