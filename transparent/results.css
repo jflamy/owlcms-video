@@ -28,7 +28,6 @@
 .video {
     font-size: 2rem;
     font-weight: bold;
-    font-family: Teko;
     background-color: var(--videoHeaderBackgroundColor);
     color: var(--videoHeaderTextColor);
     margin-bottom: 1.2rem;
