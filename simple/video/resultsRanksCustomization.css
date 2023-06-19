@@ -83,7 +83,7 @@
     padding: 0.1rem;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: no-wrap;
     justify-content: space-around;
     line-height: unset;

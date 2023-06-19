@@ -12,7 +12,7 @@
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: no-wrap;
     justify-content: flex-start;
 	line-height: unset;
@@ -984,7 +984,7 @@ div.ellipsis {
 }
 
 :host(.dark) .recordTitle {
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: right;
     font-weight: bold;
     height: var(--recordValueCellHeight);

@@ -6,8 +6,8 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 0.60fr;
-    --clubWidth: 0.40fr;
+    --nameWidth: 0.45fr;
+    --clubWidth: 0.55fr;
     
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;

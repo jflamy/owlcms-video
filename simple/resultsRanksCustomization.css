@@ -8,8 +8,8 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 1fr;
-    --clubWidth: 10ch;
+    --nameWidth: 0.75fr;
+    --clubWidth: 0.25fr;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -83,7 +83,7 @@
     padding: 0.1rem;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: no-wrap;
     justify-content: space-around;
     line-height: unset;
@@ -91,7 +91,7 @@
 
 .blockPositioningWrapper {
     background-color: var(--blockBackgroundColor);
-    width: fit-content;
+    /* width: fit-content;*/ /* fit-content is used for video block */
     padding-right: 1em;
     padding-left: 0.5em;
 }
