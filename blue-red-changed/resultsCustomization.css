@@ -6,19 +6,19 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 0.60fr;
-    --clubWidth: 0.40fr;
-    
+    --nameWidth: 0.45fr;
+    --clubWidth: 0.55fr;
+
     /* left column width: adjust depending on how you name groups */
-    --startWidth: 0em;
-    --startVisibility: hidden;
+    --startWidth: 6em;
+    --startVisibility: visible;
 
     /* spacers */
     --spacerWidth: 1vh;
 
     /* normally these do not need to change */
-    --categoryWidth: 10ch;
-    --liftResultWidth: 6ch;
+    --categoryWidth: 11ch;
+    --liftResultWidth: 7.5ch;
 
     /* to show these columns 
     - change hidden to visible
@@ -26,21 +26,26 @@
     */
     --birthWidth: 6ch;
     --birthVisibility: visible;
-    --custom1Width: 0;
-    --custom1Visibility: hidden;
+    --custom1Width: 8ch;
+    --custom1Visibility: visible;
     --custom2Width: 0;
     --custom2Visibility: hidden;
 
     --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
+    --totalRankWidth: var(--liftResultWidth);
 
+    /* 
+    --bestWidth: var(--liftResultWidth);
+    --bestVisibility: visible;
+    */
     --bestWidth: 0;
     --bestVisibility: hidden;
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
-    --athleteNameFontSize: 4vh;
-    --groupInfoFontSize: 2.5vh;
+    --athleteNameFontSize: 3vh;
+    --groupInfoFontSize: 2vh;
 
     /* records */
     --recordValueCellWidth: 4rem;
@@ -59,39 +64,7 @@
 
 :host(.dark) table.results {
     --spacerWidth: 1vh;
-    --rowSmallSpacerHeight: 0.25vh;
-}
-/* default for page */
-.wrapper {
-    /* results table font size */
-    --tableFontSize: 1.25rem;
-    --recordValueCellHeight: calc(var(--tableFontSize)*1.5);
-    --recordsFontRatio: 0.9;
-
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--pageTextColor);
-    background-color: var(--pageBackgroundColor);
-    margin: 0;
-
-    padding: 0.1rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: space-around;
-    line-height: unset;
-}
-
-.blockPositioningWrapper {
-    background-color: var(--blockBackgroundColor);
-    width: fit-content;
-    padding-right: 1em;
-    padding-left: 0.5em;
-}
-
-.filler {
-    background-color: var(--blockBackgroundColor);
-    min-height: 1.5em;
+    --rowSmallSpacerHeight: 0; /* set to 0.25vh if transparent background */
 }
 
 td.flags div img {

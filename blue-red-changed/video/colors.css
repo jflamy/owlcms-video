@@ -1,26 +1,26 @@
 * {
-    --pageBackgroundColor: #00053c;
+    --pageBackgroundColor: black;
     --pageTextColor: white;
-
-    /* video header (same as page if no transparency) */
+    
+    /* video header */
     --videoHeaderBackgroundColor: var(--pageBackgroundColor);
     --videoHeaderTextColor: var(--pageTextColor);
 
     /* control record notification on scoreboard and attempt board.
        Set to 10 to show notifications, set to -10 if notifications not wanted */
-    --zIndexRecordNotifications: -10;
+    --zIndexRecordNotifications: 10;
 
     /* current attempt section */
     --startNumberBoxColor: red;
-    --breakTimerColor: #00ff00;
+    --breakTimerColor: skyblue;
     --athleteTimerColor: yellow;
-    --athleteAttemptWeightColor: #ff9900;
+    --athleteAttemptWeightColor: aqua;
     --downColor: lime;
 
-    --athleteNameColor: lime;
-    --athleteCategoryColor: red;
-    --athleteTeamColor: #ffff00;
-    --athleteAttemptColor: #00ffff;
+    --athleteNameColor: white;
+    --athleteCategoryColor: white;
+    --athleteTeamColor: white;
+    --athleteAttemptColor: white;
 
     --groupInfoColor: white;
 
@@ -28,13 +28,13 @@
 
     --lightTableBorders: grey;
     --lightTextColor: black;
-    --lightBackgroundColor: #062f00;
+    --lightBackgroundColor: white;
 
     --lightTitleTextColor: black;
     --lightTitleBackgroundColor: white;
 
     --lightCurrentTextColor: var(--lightTextColor);
-    --lightCurrentBackgroundColor: #00ff43;
+    --lightCurrentBackgroundColor: yellow;
 
     --lightNextTextColor: var(--lightTextColor);
     --lightNextBackgroundColor: gold;
@@ -61,7 +61,7 @@
     --lightGoodBackgroundColor: green;
 
     --lightFailTextColor: white;
-    --lightFailBackgroundColor: #8b0000;
+    --lightFailBackgroundColor: darkred;
 
     --lightRankTextColor: var(--lightTextColor);
     --lightRankBackgroundColor: #F9E79F;
@@ -80,53 +80,53 @@
 
     --darkTableBorders: var(--pageTextColor);
     --darkTextColor: var(--pageTextColor);
-    --darkBackgroundColor: #00053c;
+    --darkBackgroundColor: var(--pageBackgroundColor);
 
-    --darkTitleTextColor: #ffffff;
-    --darkTitleBackgroundColor: #7b0000;
+    --darkTitleTextColor: var(--darkTextColor);
+    --darkTitleBackgroundColor: var(--darkBackgroundColor);
 
-    --darkCurrentTextColor: #000000;
-    --darkCurrentBackgroundColor: #00ff5e;
+    --darkCurrentTextColor: yellow;
+    --darkCurrentBackgroundColor: var(--darkBackgroundColor);
 
-    --darkNextTextColor: black;
-    --darkNextBackgroundColor: #ffff00;
+    --darkNextTextColor: orange;
+    --darkNextBackgroundColor: var(--darkBackgroundColor);
 
-    --darkRequestTextColor: yellow;
-    --darkRequestBackgroundColor: #000000;
+    --darkRequestTextColor: var(--darkTextColor);
+    --darkRequestBackgroundColor: var(--darkBackgroundColor);
 
-    --darkStartBackgroundColor: #393838;
-    --darkStartTextColor: white;
+    --darkStartBackgroundColor: var(--darkBackgroundColor);
+    --darkStartTextColor: var(--darkTextColor);
 
-    --darkNameBackgroundColor: black;
-    --darkNameTextColor: #00e2ff;
+    --darkNameBackgroundColor: var(--darkBackgroundColor);
+    --darkNameTextColor: var(--darkTextColor);
 
-    --darkCategoryTextColor: #ffdb00;
-    --darkCategoryBackgroundColor: #00044f;
+    --darkCategoryTextColor: var(--darkTextColor);
+    --darkCategoryBackgroundColor: var(--darkBackgroundColor);
 
-    --darkBirthTextColor: #ffffff;
-    --darkBirthBackgroundColor: #46006f;
+    --darkBirthTextColor: var(--darkTextColor);
+    --darkBirthBackgroundColor: var(--darkBackgroundColor);
 
-    --darkTeamTextColor: #ffffff;
-    --darkTeamBackgroundColor: #002c34;
+    --darkTeamTextColor: var(--darkTextColor);
+    --darkTeamBackgroundColor: var(--darkBackgroundColor);
 
     --darkGoodTextColor: white;
-    --darkGoodBackgroundColor: #0041a5;
+    --darkGoodBackgroundColor: green;
 
     --darkFailTextColor: white;
-    --darkFailBackgroundColor: #f60000;
+    --darkFailBackgroundColor: darkred;
 
-    --darkRankTextColor: #ffffff;
-    --darkRankBackgroundColor: #393838;
+    --darkRankTextColor: var(--darkTextColor);
+    --darkRankBackgroundColor: var(--darkBackgroundColor);
 
-    --darkTotalRankTextColor: #ffffff;
-    --darkTotalRankBackgroundColor: #ffb300;
+    --darkTotalRankTextColor: var(--darkTextColor);
+    --darkTotalRankBackgroundColor: var(--darkBackgroundColor);
 
-    --darkTotalTextColor: white;
-    --darkTotalBackgroundColor: #004249;
+    --darkTotalTextColor: var(--darkGoodTextColor);
+    --darkTotalBackgroundColor: blue;
 
     --darkSpacerBackgroundColor: var(--darkBackgroundColor);
     --darkEmptyTextColor: #4d4d4d;
-    --darkEmptyBackgroundColor: #000b48;
+    --darkEmptyBackgroundColor: #4d4d4d;
 
     /* records table section, white on black */
     --lightRecordBoxBorder: var(--pageTextColor);
@@ -159,16 +159,18 @@
     --darkRecordValueText: var(--pageTextColor);
     --darkRecordValueBackground: var(--pageBackgroundColor);
     --darkRecordCellBorderColor: var(--pageTextColor);
-    
+
     --darkRecordNameBackground: var(--pageBackgroundColor);
-    --darkRecordNameText: #17ff00;
+    --darkRecordNameText: var(--pageTextColor);
 
-    --darkRecordLiftTypeBackground: #00053c;
-    --darkRecordLiftTypeText: #ff8f00;
-    --darkRecordLiftTypeBorder: #ffff00;
+    --darkRecordLiftTypeBackground: var(--pageBackgroundColor);
+    --darkRecordLiftTypeText: var(--pageTextColor);
+    --darkRecordLiftTypeBorder: var(--pageTextColor);
 
-    --darkRecordHighlightBackground: #fffc00;
-    --darkRecordHighlightText: #000000;
-    --darkAttemptHighlightText: red;
-    --darkAttemptHighlightBackground: #fffc00;
+    --darkRecordHighlightBackground: green;
+    --darkRecordHighlightText: white;
+    --darkAttemptHighlightText: white;
+    --darkAttemptHighlightBackground: purple;
+
+
 }
