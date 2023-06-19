@@ -30,6 +30,7 @@
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
     display: flex;
+    /* required for block mode */
     flex-direction: row;
     flex-wrap: no-wrap;
     justify-content: flex-start;
@@ -563,7 +564,7 @@ table {
         /* custom fields */
         var(--custom1Width) var(--custom2Width)
         /* team name */
-        minmax(50px, var(--clubWidth))
+        auto
         /* snatch results */
         var(--spacerWidth)
         repeat(3, var(--liftResultWidth))
