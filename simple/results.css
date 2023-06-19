@@ -13,7 +13,7 @@
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: no-wrap;
     justify-content: flex-start;
     line-height: unset;
@@ -23,6 +23,13 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+}
+
+.waiting {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
 }
 
 .video {
@@ -38,25 +45,12 @@
     justify-items: center;
 }
 
-/*
 .video .videoheader {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-}
-*/
-
-.video .videoheader {
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-direction: column;
-    text-align: center;
 }
 
 .video .eventlogo {
@@ -86,12 +80,6 @@
     height: 70px;
     margin-right:5px;
     background-position: center;
-}
-
-.flag img {
-    border: 1px;
-    border-color: black;
-    border-style: solid;
 }
 
 /* table general parameters */
@@ -292,12 +280,16 @@ table.results tr td.club div.ellipsis {
 }
 
 /* group */
-:host(.light) table.results tr td.groupCol {
+:host(.light) table.results tr td.groupCol,
+:host(.light) table.results th td.groupCol  {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
     visibility: var(--startVisibility);
 }
-:host(.dark) table.results tr td.groupCol {
+
+:host(.dark) table.results tr td.groupCol,
+:host(.dark) table.results th td.groupCol
+ {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
     visibility: var(--startVisibility);
@@ -539,7 +531,7 @@ table {
         /* custom fields */
         var(--custom1Width) var(--custom2Width)
         /* team name */
-        minmax(50px, var(--clubWidth))
+        auto
         /* snatch results */
         var(--spacerWidth)
         repeat(3, var(--liftResultWidth))
