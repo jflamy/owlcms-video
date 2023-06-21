@@ -172,7 +172,7 @@
     --darkRecordHighlightBackground: green;
     --darkRecordHighlightText: white;
     --darkAttemptHighlightText: white;
-    --darkAttemptHighlightBackground: var(--videoHeaderBackgroundColor);
+    --darkAttemptHighlightBackground: purple;
 }
 
 @font-face {
