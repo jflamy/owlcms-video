@@ -29,6 +29,7 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
+    text-align: center;
 }
 
 .video {
@@ -80,7 +81,6 @@
     margin-right:5px;
     background-position: center;
 }
-
 
 /* table general parameters */
 table.results {
@@ -208,8 +208,7 @@ table.results.sinclair {
 }
 
 table.results tr td.club div.ellipsis {
-    width: unset;
-    max-width: unset;
+    width: var(--teamNameShortLength);
 }
 
 /* good/bad cells */
@@ -281,12 +280,16 @@ table.results tr td.club div.ellipsis {
 }
 
 /* group */
-:host(.light) table.results tr td.groupCol {
+:host(.light) table.results tr td.groupCol,
+:host(.light) table.results th td.groupCol  {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
     visibility: var(--startVisibility);
 }
-:host(.dark) table.results tr td.groupCol {
+
+:host(.dark) table.results tr td.groupCol,
+:host(.dark) table.results th td.groupCol
+ {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
     visibility: var(--startVisibility);
@@ -528,6 +531,48 @@ table {
         /* custom fields */
         var(--custom1Width) var(--custom2Width)
         /* team name */
+        auto
+        /* snatch results */
+        var(--spacerWidth)
+        repeat(3, var(--liftResultWidth))
+        var(--bestWidth)
+        /* one snatch rank per category */
+        repeat(var(--nbRanks), var(--rankWidth))
+        /* clean&jerk */
+        var(--spacerWidth)
+        repeat(3, var(--liftResultWidth))
+        var(--bestWidth)
+        /* one snatch rank per category */
+        repeat(var(--nbRanks), var(--rankWidth))
+        /* total */
+        var(--spacerWidth)
+        repeat(1, var(--liftResultWidth))
+        /* one total rank per category */
+        repeat(var(--nbRanks), var(--totalRankWidth))
+        /* sinclair result */
+        var(--sinclairWidth)
+        /* sinclair ranks */
+        var(--sinclairRankWidth);
+}
+
+/* grid layout */
+table.medals {
+    /* do not use all available vertical space */
+    flex: 0;
+    display: grid;
+    border-collapse: collapse;
+    grid-template-columns:
+        /* group */
+        var(--startWidth)
+        /* name */
+        minmax(50px, var(--nameWidth))
+        /* category */
+        var(--categoryWidth)
+        /* birth */
+        var(--birthWidth)
+        /* custom fields */
+        var(--custom1Width) var(--custom2Width)
+        /* team name */
         minmax(50px, var(--clubWidth))
         /* snatch results */
         var(--spacerWidth)
@@ -718,7 +763,7 @@ td {
 .athleteInfo .decisionBox {
     position: fixed;
     top: 1vmin;
-    right: 2vmin;
+    right: 1vmin;
     width: 15vw;
     height: 10vh;
     background-color: var(--pageBackgroundColor);

@@ -1,3 +1,5 @@
+
+
 /* default for page */
 .wrapper {
     /* results table font size */
@@ -13,7 +15,8 @@
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    /* required for block mode */
+    flex-direction: row;
     flex-wrap: no-wrap;
     justify-content: flex-start;
     line-height: unset;
@@ -26,15 +29,25 @@
 }
 
 .waiting {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--videoHeaderBackgroundColor);
+    color: var(--videoHeaderTextColor);
+    padding: 1rem;
     display: flex;
-    flex-grow: 1;
     align-items: center;
-    text-align: center;
+    justify-items: center;
+}
+
+.waiting .nextGroup {
+    font-size: 3rem;
 }
 
 .video {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
     background-color: var(--videoHeaderBackgroundColor);
     color: var(--videoHeaderTextColor);
     margin-bottom: 1.2rem;
@@ -46,11 +59,14 @@
 }
 
 .video .videoheader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    align-self: center;
+    justify-self: center;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
 }
 
 .video .eventlogo {
@@ -58,7 +74,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/left.png');
+    background-image: url('../../logos/sudamericana2.png');
     /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
@@ -72,14 +88,20 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/right.png');
-    /* background-color:white; */
+    background-image: url('../../logos/sajr2.png');
+    /*background-color:white;*/
     background-size: contain;
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-right:5px;
     background-position: center;
+}
+
+.flags img {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
 }
 
 /* table general parameters */
@@ -99,7 +121,7 @@ table.results {
 table.results.noranks {
     --rankWidth: 0;
     --rankVisibility: hidden;
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: var(--rankWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;
@@ -280,16 +302,12 @@ table.results tr td.club div.ellipsis {
 }
 
 /* group */
-:host(.light) table.results tr td.groupCol,
-:host(.light) table.results th td.groupCol  {
+:host(.light) table.results tr td.groupCol {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
     visibility: var(--startVisibility);
 }
-
-:host(.dark) table.results tr td.groupCol,
-:host(.dark) table.results th td.groupCol
- {
+:host(.dark) table.results tr td.groupCol {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
     visibility: var(--startVisibility);
@@ -763,7 +781,7 @@ td {
 .athleteInfo .decisionBox {
     position: fixed;
     top: 1vmin;
-    right: 1vmin;
+    right: 2vmin;
     width: 15vw;
     height: 10vh;
     background-color: var(--pageBackgroundColor);
@@ -1024,14 +1042,16 @@ div.ellipsis {
     background-color: var(--darkRecordHighlightBackground);
     color: var(--darkRecordHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
 }
 
 :host(.dark) .recordNotification.attempt {
     background-color: var(--darkAttemptHighlightBackground);
     color: var(--darkAttemptHighlightText);
     z-index: var(--zIndexRecordNotifications);
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
 }
 
 :host(.light) .recordNotification.new {
