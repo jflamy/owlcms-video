@@ -343,10 +343,9 @@ justify-self: center;
 }
 
 .bigTitle {
-    align-items: center;
     justify-content: center;
+    align-content: center;
     text-align: center;
-	display:flex;
 }
 
 .competitionName {
