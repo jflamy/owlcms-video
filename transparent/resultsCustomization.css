@@ -6,6 +6,7 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
+    --tableFontSize: 2vh;
     --nameWidth: 1fr;
     --clubWidth: min-content;
 
