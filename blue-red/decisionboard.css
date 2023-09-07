@@ -1,29 +1,27 @@
-@import 'colors.css';
-
 * {
 	box-sizing: border-box;
 }
 
 .wrapper {
 	font: Arial;
-	color: white;
-	background-color: #00053c;
+	color: var(--pageTextColor);
+	background-color: var(--pageBackgroundColor);
 	height: 100vh;
 	width: 100vw;
 }
 
 .decisionBoard {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	background-color: #00053c;
+	font-family: "Arial", "Helvetica", sans-serif;
 	display: grid;
+	color: var(--pageTextColor);
+	background-color: var(--pageBackgroundColor);
 	width: 100vw;
 	height: 100vh;
 	grid-template-columns:
-		[barbell-start down-start decision-start timer-start]1fr
+		[barbell-start down-start decision-start timer-start] 1fr
 		[barbell-end timer-end name down-end decision-end];
-	grid-template-rows: 0.25fr[down-start decision-start barbell-start timer-start]1fr
-		[barbell-end timer-end down-end	decision-end]0.25fr;
+	grid-template-rows: 0.25fr [down-start decision-start barbell-start timer-start] 1fr
+		[barbell-end timer-end down-end	decision-end] 0.25fr;
 	justify-content: center;
 	align-content: center;
 	align-items: stretch;
@@ -37,7 +35,7 @@
 }
 
 .decisionBoard .timer {
-	font-size: 60vh;
+	font-size: 50vh;
 	font-weight: bold;
 	grid-area: timer-start/timer-start/timer-end/timer-end;
 	align-self: center;
@@ -46,18 +44,16 @@
 
 @media screen and (max-width: 1300px) {
 	.decisionBoard .timer {
-		font-size: 40vw;
+		font-size: 35vw;
 	}
 }
 
 .breakTime {
-	color: yellow;
-	text-shadow: 10px 8px 5px #000;
+	color: var(--breakTimerColor);
 }
 
 .athleteTimer {
-	color: #ffffff;
-	text-shadow: 10px 8px 5px #000;
+	color: var(--athleteTimerColor);
 }
 
 .decisionBoard .down {
@@ -67,7 +63,7 @@
 	--iron-icon-height: 10%;
 	--iron-icon-width: 10%;
 	font-weight: normal;
-	color: pink;
+	color: var(--downColor);
 	display: none;
 	overflow: hidden;
 }
@@ -87,17 +83,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-	display: flex;
 }
 
 .competitionName {
-    font-size: 5em;
-    color:#ffff00;
-    text-shadow: 10px 5px 5px #000;
+	grid-area: 1/down-start/down-end/down-end;
+	align-self: end;
+    font-size: 8vh;
 }
 
 .nextGroup {
-    font-size: 3em;
-    color:#00f900;
-    text-shadow: 5px 5px 5px #000;
+	grid-area: decision-start/decision-start/decision-end/decision-end;
+	align-self: start;
+    font-size: 4vh;
 }
