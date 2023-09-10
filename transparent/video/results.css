@@ -74,7 +74,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/sudamericana2.png');
+    background-image: url('../../../logos/sudamericana2.png');
     /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/sajr2.png');
+    background-image: url('../../../logos/sajr2.png');
     /*background-color:white;*/
     background-size: contain;
     background-repeat: no-repeat;
