@@ -150,12 +150,12 @@ tr {
     background-color: #7affff;
 }
 
-:host(.dark) table.results tr {
+:host .dark table.results tr {
     background-color: #00053c;
     color: #fff;
 }
 
-:host(.light) table.results tr {
+:host .light table.results tr {
     background-color: #00053c;
     color: black;
 }
@@ -187,11 +187,11 @@ th, td {
     color: #fff;
 }
 
-:host(.dark) th, td {
+:host .dark th, td {
     font-weight: normal;
 }
 
-:host(.light) th, td {
+:host .light th, td {
     font-weight: bold;
 }
 
@@ -292,33 +292,33 @@ th, td {
     text-align: center;
 }
 
-:host(.dark) .good {
+:host .dark .good {
     background-color: green;
     font-weight: bold;
 }
 
-:host(.light) .good {
+:host .light .good {
     background-color: green;
     font-weight: bold;
     color: white;
 }
 
-:host(.dark) .fail {
+:host .dark .fail {
     background-color: red;
     font-weight: bold;
 }
 
-:host(.light) .fail {
+:host .light .fail {
     background-color: red;
     font-weight: bold;
     color: white;
 }
 
-:host(.dark) .spacer {
+:host .dark .spacer {
     background-color: black;
 }
 
-:host(.light) .spacer {
+:host .light .spacer {
     background-color: gray;
 }
 
@@ -326,22 +326,22 @@ th, td {
     font-size: 85%;
 }
 
-:host(.dark) .request {
+:host .dark .request {
     background-color: black;
     font-style: italic;
 }
 
-:host(.light) .request {
+:host .light .request {
     background-color: white;
     font-style: italic;
 }
 
-:host(.dark) .current {
+:host .dark .current {
     color: #2cff00;
     font-weight: bold;
 }
 
-:host(.light) .current {
+:host .light .current {
     background-color: #6cff00;
     color:black;
     font-weight: bold;
@@ -365,23 +365,23 @@ th, td {
     }
 }
 
-:host(.dark) .next {
+:host .dark .next {
     color: #ffa000;
     font-weight: bold;
 }
 
-:host(.light) .next {
+:host .light .next {
     background-color: yellow;
     color:black;
     font-weight: bold;
 }
 
-:host(.dark) .empty {
+:host .dark .empty {
     background-color: black;
     font-style: italic;
 }
 
-:host(.light) .empty {
+:host .light .empty {
     background-color: white;
     font-style: italic;
 }

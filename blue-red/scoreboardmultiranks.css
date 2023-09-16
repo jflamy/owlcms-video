@@ -271,100 +271,100 @@ table.results {
     background-color: #00053c;
 }
 
-:host(.dark) table.results tr {
+:host .dark table.results tr {
     background-color: #00053c;
     font-weight: bold;
     color: white;
 }
 
-:host(.light) table.results tr {
+:host .light table.results tr {
     background-color: white;
     font-weight: bold;
     color: #00053c;
 }
 
-:host(.dark) th, td {
+:host .dark th, td {
     font-weight: bold;
     background-color: #7b0000;
     color: white;
 }
 
-:host(.light) th, td {
+:host .light th, td {
     font-weight: bold;
     background-color: #7b0000;
     color: white;
 }
 
-:host(.light) .good {
+:host .light .good {
     background-color: #0041a5;
     font-weight: bold;
     color: white;
 }
 
-:host(.dark) .fail {
+:host .dark .fail {
     background-color: #f60000;
     font-weight: bold;
 }
 
-:host(.light) .fail {
+:host .light .fail {
     background-color: #f60000;
     font-weight: bold;
     color: white;
 }
 
-:host(.dark) .spacer {
+:host .dark .spacer {
     background-color: var(--backgroundColor);
     padding: 0.4vmin 0.4vmin 0.4vmin 0.4vmin;
     border-right: 0;
 }
 
-:host(.light) .spacer {
+:host .light .spacer {
     background-color: #00053c;
     padding: 0.4vmin 0.4vmin 0.4vmin 0.4vmin;
 }
 
-:host(.dark) .request {
+:host .dark .request {
     background-color: black;
     font-style: italic;
     color: #f4ff00;
 }
 
-:host(.light) .request {
+:host .light .request {
     background-color: black;
     font-style: italic;
     color: #f4ff00;
 }
 
-:host(.dark) td.current {
+:host .dark td.current {
     background-color: #00ffdc;
     font-weight: bold;
     color: black;
 }
 
-:host(.light) td.current {
+:host .light td.current {
    background-color: #00ffdc;
     font-weight: bold;
     color: black;
 }
 
-:host(.dark) td.next {
+:host .dark td.next {
     background-color: #ffff00;
     font-weight: bold;
     color: #000000;
 }
 
-:host(.light) td.next {
+:host .light td.next {
     background-color: gold;
     font-weight: bold;
     color: #000000;
 }
 
-:host(.dark) .empty {
+:host .dark .empty {
     background-color: #a5a5a5;
     font-style: italic;
 }
 
-:host(.light) .empty {
+:host .light .empty {
     background-color: #a5a5a5;
     font-style: italic;
 }
@@ -525,7 +525,7 @@ td.narrow {
     color: #14ff00;
 }
 
-:host(.dark) .good {
+:host .dark .good {
     background-color: #0041a5;
     font-weight: bold;
 }

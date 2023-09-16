@@ -194,12 +194,12 @@ table.results {
     border-spacing: 0.2em;
 }
 
-:host(.dark) table.results tr {
+:host .dark table.results tr {
     background-color: var(--darkBackgroundColor);
     color: var(--darkTextColor);
 }
 
-:host(.light) table.results tr {
+:host .light table.results tr {
     background-color: var(--lightBackgroundColor);
     color: var(--lightTextColor);
 }
@@ -213,14 +213,14 @@ table.results td {
     line-height: 0.9em;
 }
 
-:host(.dark) th,
-:host(.dark) td {
+:host .dark th,
+:host .dark td {
     font-weight: normal;
     border: solid 1px var(--darkTableBorders);
 }
 
-:host(.light) th,
-:host(.light) td {
+:host .light th,
+:host .light td {
     font-weight: bold;
     /* intentional dark border */
     border: solid 1px var(--darkTableBorders);
@@ -313,7 +313,7 @@ table.results td.liftName div {
     font-weight: bold;
 }
 
-:host(.dark) td.good {
+:host .dark td.good {
     background-color: var(--darkGoodBackgroundColor);
     color: var(--darkGoodTextColor);
     font-weight: bold;
@@ -321,7 +321,7 @@ table.results td.liftName div {
     text-align: center;
 }
 
-:host(.light) .good {
+:host .light .good {
     background-color: var(--lightGoodBackgroundColor);
     color: var(--lightGoodTextColor);
     font-weight: bold;
@@ -329,7 +329,7 @@ table.results td.liftName div {
     text-align: center;
 }
 
-:host(.dark) td.fail {
+:host .dark td.fail {
     background-color: var(--darkFailBackgroundColor);
     color: var(--darkFailTextColor);
     font-weight: bold;
@@ -337,7 +337,7 @@ table.results td.liftName div {
     text-align: center;
 }
 
-:host(.light) td.fail {
+:host .light td.fail {
     background-color: var(--lightFailBackgroundColor);
     color: var(--lightFailTextColor);
     font-weight: bold;
@@ -345,12 +345,12 @@ table.results td.liftName div {
     text-align: center;
 }
 
-:host(.dark) .spacer {
+:host .dark .spacer {
     background-color: var(--darkSpacerBackgroundColor);
 }
 
 
-:host(.light) .spacer {
+:host .light .spacer {
     background-color: var(--lightSpacerBackgroundColor);
 }
 
@@ -358,7 +358,7 @@ table.results td.liftName div {
     font-size: 85%;
 }
 
-:host(.dark) .request {
+:host .dark .request {
     background-color:black;
     color:yellow;
     font-weight: bold;
@@ -367,14 +367,14 @@ table.results td.liftName div {
     text-align: center;
 }
 
-:host(.light) .request {
+:host .light .request {
     background-color: white;
     font-style: italic;
     width: var(--narrow-width);
     text-align: center;
 }
 
-:host(.dark) td.current {
+:host .dark td.current {
     color: var(--darkCurrentTextColor);
     background-color: var(--darkCurrentBackgroundColor);
     font-weight: bold;
@@ -382,7 +382,7 @@ table.results td.liftName div {
     text-align: center;
 }
 
-:host(.light) td.current {
+:host .light td.current {
     color: var(--lightCurrentTextColor);
     background-color: var(--lightCurrentBackgroundColor);
     font-weight: bold;
@@ -408,34 +408,34 @@ table.results td.liftName div {
     }
 }
 
-:host(.dark) .next {
+:host .dark .next {
     color: orange;
     font-weight: bold;
 }
 
-:host(.dark) td.next {
+:host .dark td.next {
     color: gold;
     font-weight: bold;
 }
 
-:host(.light) td.next {
+:host .light td.next {
     background-color: gold;
     font-weight: bold;
 }
 
-:host(.dark) table.results td.empty {
+:host .dark table.results td.empty {
     background-color: var(--darkEmptyBackgroundColor);
     font-style: italic;
     width: var(--narrow-width);
 }
 
-:host(.light) table.results td.empty {
+:host .light table.results td.empty {
     background-color: var(--darkEmptyBackgroundColor);
     font-style: italic;
     width: var(--narrow-width);
 }
 
-:host(.dark) table.results td.total {
+:host .dark table.results td.total {
     background-color: yellow;
     color: black;
     width: var(--narrow-width);
@@ -444,7 +444,7 @@ table.results td.liftName div {
     font-weight: bold;
 }
 
-:host(.light) table.results td.total {
+:host .light table.results td.total {
     background-color: var(--darkTotalBackgroundColor);
     color: var(--darkTotalTextColor);
     width: var(--narrow-width);
