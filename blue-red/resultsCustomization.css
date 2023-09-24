@@ -76,7 +76,7 @@ td.flags div img {
 }
 td.flags div {
     height: calc(var(--athleteNameFontSize)*0.8);
-    line-height:  var(--athleteNameFontSize);
+    line-height: calc(var(--athleteNameFontSize)*0.8);
     align-self: center;
     display: flex;
 }
