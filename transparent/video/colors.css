@@ -153,7 +153,8 @@
     /* records table section, black on white */
     /* by default, same as white on black */
 
-    --darkRecordBoxBorder: var(--darkEmptyBackgroundColor);
+    --darkRecordBoxBorder: white;
+    --dardRecordBoxBorderWidth: 2px;
     --darkRecordBoxBackground: var(--darkEmptyBackgroundColor);
     --darkRecordBoxText: var(--darkTextColor);
 
@@ -162,7 +163,7 @@
     --darkRecordCellBorderColor: var(--darkTextColor);
 
     --darkRecordNameBackground: var(--blockBackgroundColor);
-    --darkRecordNameText: white;
+    --darkRecordNameText: rgb(0 0 0 / 70%);
 
     --darkRecordLiftTypeBackground: var(--darkEmptyBackgroundColor);
     --darkRecordLiftTypeText: var(--darkTextColor);

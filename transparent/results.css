@@ -14,8 +14,12 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    /* move to top */
     justify-content: flex-start;
+    flex-wrap: wrap;
+    /* center horizontally */
+    align-content: space-around;
+
     line-height: unset;
 }
 
@@ -23,12 +27,14 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: var(--tableWidthRatio, 90%);
 }
 
 .waiting {
     display: flex;
     flex-grow: 1;
     align-items: center;
+    text-align: center;
 }
 
 .video {
@@ -572,47 +578,6 @@ table {
         var(--sinclairRankWidth);
 }
 
-/* grid layout */
-table.medals {
-    /* do not use all available vertical space */
-    flex: 0;
-    display: grid;
-    border-collapse: collapse;
-    grid-template-columns:
-        /* group */
-        var(--startWidth)
-        /* name */
-        minmax(50px, var(--nameWidth))
-        /* category */
-        var(--categoryWidth)
-        /* birth */
-        var(--birthWidth)
-        /* custom fields */
-        var(--custom1Width) var(--custom2Width)
-        /* team name */
-        minmax(50px, var(--clubWidth))
-        /* snatch results */
-        var(--spacerWidth)
-        repeat(3, var(--liftResultWidth))
-        var(--bestWidth)
-        /* one snatch rank per category */
-        repeat(var(--nbRanks), var(--rankWidth))
-        /* clean&jerk */
-        var(--spacerWidth)
-        repeat(3, var(--liftResultWidth))
-        var(--bestWidth)
-        /* one snatch rank per category */
-        repeat(var(--nbRanks), var(--rankWidth))
-        /* total */
-        var(--spacerWidth)
-        repeat(1, var(--liftResultWidth))
-        /* one total rank per category */
-        repeat(var(--nbRanks), var(--totalRankWidth))
-        /* sinclair result */
-        var(--sinclairWidth)
-        /* sinclair ranks */
-        var(--sinclairRankWidth);
-}
 
 thead,
 tbody,
@@ -977,6 +942,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordBoxBackground);
     color: var(--darkRecordBoxText);
+    border: 1px solid var(--darkRecordBoxBorder);
 }
 
 :host .dark .recordName {
@@ -1000,7 +966,7 @@ div.ellipsis {
 
 :host .dark .recordBox {
     float: left;
-    border: 1px solid var(--darkRecordBoxBorder);
+    border: var(--darkRecordBoxBorderWidth) solid var(--darkRecordBoxBorder);
     color: var(--darkRecordBoxText);
 }
 

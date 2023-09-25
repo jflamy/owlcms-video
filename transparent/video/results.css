@@ -1,11 +1,10 @@
-
-
 /* default for page */
 .wrapper {
     /* results table font size */
     --tableFontSize: 1.25rem;
     --recordValueCellHeight: calc(var(--tableFontSize)*1.5);
     --recordsFontRatio: 0.9;
+    --leaderFillerHeight: 1.5em;
 
     font-family: Arial, Helvetica, sans-serif;
     color: var(--pageTextColor);
@@ -15,10 +14,13 @@
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
     display: flex;
-    /* required for block mode */
-    flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-direction: column;
+    /* move to top */
     justify-content: flex-start;
+    flex-wrap: wrap;
+    /* center horizontally */
+    align-content: space-around;
+
     line-height: unset;
 }
 
@@ -26,6 +28,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: var(--tableWidthRatio, 90%);
 }
 
 .waiting {
@@ -36,6 +39,7 @@
     color: var(--videoHeaderTextColor);
     padding: 1rem;
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-items: center;
 }
@@ -555,11 +559,11 @@ td.custom2 div {
 /* grid layout */
 table {
     /* use all available vertical space */
-    flex: 1;
+    flex: 0;
     display: grid;
     border-collapse: collapse;
     grid-template-rows:
-        repeat(var(--top), min-content) 1fr repeat(var(--bottom), var(--leaderLineHeight));
+        repeat(var(--top), min-content) var(--leaderFillerHeight) repeat(var(--bottom), var(--leaderLineHeight));
     grid-template-columns:
         /* start */
         var(--startWidth)
@@ -596,47 +600,6 @@ table {
         var(--sinclairRankWidth);
 }
 
-/* grid layout */
-table.medals {
-    /* do not use all available vertical space */
-    flex: 0;
-    display: grid;
-    border-collapse: collapse;
-    grid-template-columns:
-        /* group */
-        var(--startWidth)
-        /* name */
-        minmax(50px, var(--nameWidth))
-        /* category */
-        var(--categoryWidth)
-        /* birth */
-        var(--birthWidth)
-        /* custom fields */
-        var(--custom1Width) var(--custom2Width)
-        /* team name */
-        minmax(50px, var(--clubWidth))
-        /* snatch results */
-        var(--spacerWidth)
-        repeat(3, var(--liftResultWidth))
-        var(--bestWidth)
-        /* one snatch rank per category */
-        repeat(var(--nbRanks), var(--rankWidth))
-        /* clean&jerk */
-        var(--spacerWidth)
-        repeat(3, var(--liftResultWidth))
-        var(--bestWidth)
-        /* one snatch rank per category */
-        repeat(var(--nbRanks), var(--rankWidth))
-        /* total */
-        var(--spacerWidth)
-        repeat(1, var(--liftResultWidth))
-        /* one total rank per category */
-        repeat(var(--nbRanks), var(--totalRankWidth))
-        /* sinclair result */
-        var(--sinclairWidth)
-        /* sinclair ranks */
-        var(--sinclairRankWidth);
-}
 
 thead,
 tbody,
@@ -1001,6 +964,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordBoxBackground);
     color: var(--darkRecordBoxText);
+    border: 1px solid var(--darkRecordBoxBorder);
 }
 
 :host .dark .recordName {
@@ -1010,7 +974,7 @@ div.ellipsis {
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
     font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 :host .dark .recordTitle {
@@ -1019,12 +983,12 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--darkRecordNameBackground);
     color: var(--darkRecordNameText);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 :host .dark .recordBox {
     float: left;
-    border: 1px solid var(--darkRecordBoxBorder);
+    border: var(--darkRecordBoxBorderWidth) solid var(--darkRecordBoxBorder);
     color: var(--darkRecordBoxText);
 }
 

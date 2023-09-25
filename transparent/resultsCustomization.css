@@ -8,7 +8,8 @@
     */
     --tableFontSize: 2vh;
     --nameWidth: 1fr;
-    --clubWidth: min-content;
+    --clubWidth: max-content;
+    --tableWidthRatio: 90%;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: min-content;
@@ -36,11 +37,14 @@
 
     --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
+
     
     --totalRankWidth: var(--liftResultWidth);
 
-    /* --bestWidth: var(--liftResultWidth);
-    --bestVisibility: visible; */
+    /* 
+    --bestWidth: var(--liftResultWidth);
+    --bestVisibility: visible; 
+    */
     --bestWidth: 0;
     --bestVisibility: hidden;
 
