@@ -41,12 +41,8 @@
     
     --totalRankWidth: var(--liftResultWidth);
 
-    /* 
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible; 
-    */
-    --bestWidth: 0;
-    --bestVisibility: hidden;
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
@@ -61,6 +57,31 @@
 
     box-sizing: border-box;
     --nbRanks: 1;
+}
+
+
+:host .light table.results {
+    --spacerWidth: 0vh;
+    --rowSmallSpacerHeight: 0;
+}
+
+:host .dark table.results {
+    --spacerWidth: 1vh;
+    --rowSmallSpacerHeight: 0; /* set to 0.25vh if transparent background */
+}
+
+td.flags div img {
+    height: calc(var(--athleteNameFontSize)*0.8);
+    margin: 1vh;
+    align-self: center;
+    border: 1px;
+    border-style: solid;
+}
+td.flags div {
+    height: calc(var(--athleteNameFontSize)*0.8);
+    line-height: calc(var(--athleteNameFontSize)*0.8);
+    align-self: center;
+    display: flex;
 }
 
 /* table sizes: ipad, 1024 projector */
@@ -85,26 +106,40 @@
     }
 }
 
-:host .light table.results {
-    --spacerWidth: 0vh;
-    --rowSmallSpacerHeight: 0;
-}
-
-:host .dark table.results {
-    --spacerWidth: 1vh;
-    --rowSmallSpacerHeight: 0.25vh; /* set to 0.25vh if transparent background */
-}
-
-td.flags div img {
-    height: calc(var(--athleteNameFontSize)*0.8);
-    margin: 1vh;
-    align-self: center;
-    border: 1px;
-    border-style: solid;
-}
-td.flags div {
-    height: calc(var(--athleteNameFontSize)*0.8);
-    line-height: calc(var(--athleteNameFontSize)*0.8);
-    align-self: center;
-    display: flex;
+@media screen and (orientation:portrait) {
+    /* this is what actually controls the line height */
+    :host table.results tr td.flags div.flags {
+        height: calc(var(--tableFontSize)*1.5);
+        line-height: calc(var(--tableFontSize)*1.5);
+	}
+    :host table.results {
+        margin-top: 1em;
+        --tableFontSize: 1.4em;
+        --bestVisibility: hidden;
+        --bestWidth: 0;
+        --rankVisibility: hidden;
+        --rankWidth: 0;
+        --teamWidth: 0 !important;
+        --teamVisibility: hidden !important;
+        --birthVisibility: hidden;
+        --birthWidth: 0;
+        --totalRankWidth: 0;
+        --totalRankVisibility: hidden;
+    }
+    :host table.results tr td.club,  
+    :host table.results tr th.club {
+        visibility:hidden;
+        width: 0;
+    }
+    :host table.results tr td.yob, 
+    :host table.results tr th.yob {
+        --birthVisibility :hidden;
+        width: 0;
+    }
+    :host .attemptBar {
+        display: none !important;
+    }
+    :host .group {
+        display: none !important;
+    }
 }

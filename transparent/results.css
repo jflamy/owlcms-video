@@ -4,6 +4,7 @@
     --tableFontSize: 1.25rem;
     --recordValueCellHeight: calc(var(--tableFontSize)*1.5);
     --recordsFontRatio: 0.9;
+    --leaderFillerHeight: 1fr;
 
     font-family: Arial, Helvetica, sans-serif;
     color: var(--pageTextColor);
@@ -62,10 +63,10 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/sudamericana.png');
+    background-image: url('../../logos/left.png');
+    /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
-    background-color:white;
     width: 70px;
     height: 75px;
     background-position: center;
@@ -76,8 +77,8 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../logos/felp.png');
-    background-color:white;
+    background-image: url('../../logos/right.png');
+    /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
     width: 70px;
@@ -103,7 +104,7 @@ table.results {
 table.results.noranks {
     --rankWidth: 0;
     --rankVisibility: hidden;
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: var(--rankWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;
@@ -272,7 +273,7 @@ table.results tr td.club div.clubName div.ellipsis {
 }
 
 :host .light table.results tr td.best,
-:host .light table.results th td.best {
+:host .light table.results tr th.best {
     background-color: var(--lightTotalBackgroundColor);
     color: var(--lightTotalTextColor);
     visibility: var(--bestVisibility);
@@ -287,7 +288,7 @@ table.results tr td.club div.clubName div.ellipsis {
 }
 
 :host .light table.results tr td.totalRank,
-:host .light table.results th td.totalRank {
+:host .light table.results tr th.totalRank {
     background-color: var(--lightTotalRankBackgroundColor);
     color: var(--lightTotalRankTextColor);
     visibility: var(--totalRankVisibility);
@@ -295,14 +296,14 @@ table.results tr td.club div.clubName div.ellipsis {
 
 /* group */
 :host .light table.results tr td.groupCol,
-:host .light table.results th td.groupCol  {
+:host .light table.results tr th.groupCol  {
     background-color: var(--lightStartBackgroundColor);
     color: var(--lightStartTextColor);
     visibility: var(--startVisibility);
 }
 
 :host .dark table.results tr td.groupCol,
-:host .dark table.results th td.groupCol
+:host .dark table.results tr th.groupCol
  {
     background-color: var(--darkStartBackgroundColor);
     color: var(--darkStartTextColor);
@@ -541,7 +542,7 @@ table {
     display: grid;
     border-collapse: collapse;
     grid-template-rows:
-        repeat(var(--top), min-content) 1fr repeat(var(--bottom), var(--leaderLineHeight));
+        repeat(var(--top), min-content) var(--leaderFillerHeight) repeat(var(--bottom), var(--leaderLineHeight));
     grid-template-columns:
         /* start */
         var(--startWidth)

@@ -258,7 +258,7 @@ table.results tr td.club div.clubName div.ellipsis {
 }
 
 :host .light table.results tr td.best,
-:host .light table.results th td.best {
+:host .light table.results tr th.best {
     background-color: var(--lightTotalBackgroundColor);
     color: var(--lightTotalTextColor);
     visibility: var(--bestVisibility);
@@ -273,7 +273,7 @@ table.results tr td.club div.clubName div.ellipsis {
 }
 
 :host .light table.results tr td.totalRank,
-:host .light table.results th td.totalRank {
+:host .light table.results tr th.totalRank {
     background-color: var(--lightTotalRankBackgroundColor);
     color: var(--lightTotalRankTextColor);
     visibility: var(--totalRankVisibility);

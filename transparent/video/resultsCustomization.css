@@ -42,10 +42,6 @@
     
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
-    /*
-    --bestWidth: 0;
-    --bestVisibility: hidden;
-      */
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
@@ -71,18 +67,6 @@
     --rowSmallSpacerHeight: 0.25vh;
 }
 
-.blockPositioningWrapper {
-    background-color: var(--blockBackgroundColor);
-    padding: 0.75em;
-    margin-top: 1em;
-    flex-grow: 0;
-}
-
-.filler {
-    background-color: var(--blockBackgroundColor);
-    min-height: 1.5em;
-}
-
 td.flags div img {
     height: calc(var(--athleteNameFontSize)*0.8);
     margin: 1vh;
@@ -95,4 +79,16 @@ td.flags div {
     line-height: calc(var(--athleteNameFontSize)*0.8);
     align-self: center;
     display: flex;
+}
+
+.blockPositioningWrapper {
+    background-color: var(--blockBackgroundColor);
+    padding: 0.75em;
+    margin-top: 1em;
+    flex-grow: 0;
+}
+
+.filler {
+    background-color: var(--blockBackgroundColor);
+    min-height: 1.5em;
 }
