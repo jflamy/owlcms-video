@@ -10,6 +10,7 @@
     --clubWidth: 10em;
     /* define this if you use acronyms and want flags to line up */
     --teamNameShortLength: 4ch;
+     */
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -35,6 +36,8 @@
 
     --rankWidth: 6ch;
     --rankVisibility: visible;
+    --totalRankWidth: 6ch;
+    --totalRankVisibility: visible;
     
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
@@ -82,7 +85,7 @@
     /* min-height: min-content; */
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
-    display: grid;
+    /*display: grid;*/ /* not needed for medals/rankings */
     justify-content: center;
     line-height: unset;
 }
@@ -170,46 +173,46 @@ td.flags div.flags {
     border-style: solid;
 }
 
-:host .light .wrapper table.results tr td.rank {
+:host div.wrapper.light table.results tr td.rank {
     border-color: var(--lightTableBorders);
     color: white;
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.rank.medal1 {
+:host div.wrapper.light table.results tr td.rank.medal1 {
     background-color: gold;
     color: black;
 }
-:host .light .wrapper table.results tr td.rank.medal2 {
+:host div.wrapper.light table.results tr td.rank.medal2 {
     background-color: silver;
     color: black;
 }
-:host .light .wrapper table.results tr td.rank.medal3 {
+:host div.wrapper.light table.results tr td.rank.medal3 {
     background-color: #CD7F32;
     color: black;
 }
 
-:host .light .wrapper table.results tr td.totalRrank {
+:host div.wrapper.light table.results tr td.totalRrank {
     border-color: var(--lightTableBorders);
     color: white;
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.totalRank.medal1 {
+:host div.wrapper.light table.results tr td.totalRank.medal1 {
     background-color: gold;
     color: black;
     border-color: var(--lightTableBorders);
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.totalRank.medal2 {
+:host div.wrapper.light table.results tr td.totalRank.medal2 {
     background-color: silver;
     color: black;
     border-color: var(--lightTableBorders);
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.totalRank.medal3 {
+:host div.wrapper.light table.results tr td.totalRank.medal3 {
     background-color: #CD7F32;
     color: black;
     border-color: var(--lightTableBorders);

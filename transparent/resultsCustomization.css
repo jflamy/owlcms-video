@@ -37,9 +37,8 @@
 
     --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
-
-    
     --totalRankWidth: var(--liftResultWidth);
+    --totalRankVisibility: visible;
 
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible; 
@@ -59,30 +58,6 @@
     --nbRanks: 1;
 }
 
-
-:host .light table.results {
-    --spacerWidth: 0vh;
-    --rowSmallSpacerHeight: 0;
-}
-
-:host .dark table.results {
-    --spacerWidth: 1vh;
-    --rowSmallSpacerHeight: 0; /* set to 0.25vh if transparent background */
-}
-
-td.flags div img {
-    height: calc(var(--athleteNameFontSize)*0.8);
-    margin: 1vh;
-    align-self: center;
-    border: 1px;
-    border-style: solid;
-}
-td.flags div {
-    height: calc(var(--athleteNameFontSize)*0.8);
-    line-height: calc(var(--athleteNameFontSize)*0.8);
-    align-self: center;
-    display: flex;
-}
 
 /* table sizes: ipad, 1024 projector */
 @media screen and (orientation: landscape) and (min-height: 401px) and (max-height: 800px) {
@@ -142,4 +117,29 @@ td.flags div {
     :host .group {
         display: none !important;
     }
+}
+
+:host .light table.results {
+    --spacerWidth: 0vh;
+    --rowSmallSpacerHeight: 0;
+}
+
+:host .dark table.results {
+    --spacerWidth: 1vh;
+    --rowSmallSpacerHeight: 0; /* set to 0.25vh if transparent background */
+}
+
+td.flags div img {
+    height: calc(var(--athleteNameFontSize)*0.8);
+    margin: 1vh;
+    align-self: center;
+    border: 1px;
+    border-style: solid;
+}
+
+td.flags div.flags {
+    height: calc(var(--athleteNameFontSize)*0.8);
+    line-height: calc(var(--athleteNameFontSize)*0.8);
+    align-self: center;
+    display: flex;
 }
