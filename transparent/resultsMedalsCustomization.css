@@ -6,15 +6,15 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: 35ch;
-    --clubWidth: 10em;
-    /* define this if you use acronyms and want flags to line up */
+    --nameWidth: auto;
+    --clubWidth: min-content;
+    /* define this if you use acronyms and want flags to line up
     --teamNameShortLength: 4ch;
      */
 
     /* left column width: adjust depending on how you name groups */
-    --startWidth: 0em;
-    --startVisibility: hidden;
+      --startWidth: 0em;
+      --startVisibility: hidden;
     
     /* spacers */
     --spacerWidth: 1vh;
@@ -34,9 +34,9 @@
     --custom2Width: 0;
     --custom2Visibility: hidden;
 
-    --rankWidth: 6ch;
+    --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
-    --totalRankWidth: 6ch;
+    --totalRankWidth: var(--liftResultWidth);
     --totalRankVisibility: visible;
     
     --bestWidth: var(--liftResultWidth);
@@ -112,13 +112,14 @@ td.flags div.flags {
     display: flex;
 }
 
-.blockPositioningWrapper {
+
+/* .blockPositioningWrapper {
     background-color: var(--blockBackgroundColor);
     width: fit-content;
     height: fit-content;
     padding: 0.66em;
     margin-top: 1em;
-}
+} */
 
 .filler {
     background-color: var(--blockBackgroundColor);
@@ -230,7 +231,7 @@ table.medals {
         /* group */
         var(--startWidth)
         /* name */
-        minmax(35ch, 25%)
+        var(--nameWidth)
         /* category */
         var(--categoryWidth)
         /* birth */
@@ -238,7 +239,7 @@ table.medals {
         /* custom fields */
         var(--custom1Width) var(--custom2Width)
         /* team name */
-        minmax(min-content, 25%)
+        var(--clubWidth)
         /* snatch results */
         var(--spacerWidth)
         repeat(3, var(--liftResultWidth))
@@ -274,5 +275,3 @@ div > div > div.attemptBar {
     color: var(--athleteNameColor);
     font-size: var(--athleteNameFontSize)
 }
-
-
