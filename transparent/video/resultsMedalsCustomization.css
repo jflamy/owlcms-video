@@ -84,9 +84,12 @@
     /* min-height: min-content; */
     padding: 1vmin 2vmin 2vmin 2vmin;
     overflow: hidden;
+    line-height: unset;
+    
+    /* needed to position background block correctly */
     display: grid;
     justify-content: center;
-    line-height: unset;
+    align-content: start;
 }
 
 /*
@@ -175,46 +178,46 @@ td.flags div.flags {
     border-style: solid;
 }
 
-:host .light .wrapper table.results tr td.rank {
+:host div.wrapper.light table.results tr td.rank {
     border-color: var(--lightTableBorders);
     color: white;
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.rank.medal1 {
+:host div.wrapper.light table.results tr td.rank.medal1 {
     background-color: gold;
     color: black;
 }
-:host .light .wrapper table.results tr td.rank.medal2 {
+:host div.wrapper.light table.results tr td.rank.medal2 {
     background-color: silver;
     color: black;
 }
-:host .light .wrapper table.results tr td.rank.medal3 {
+:host div.wrapper.light table.results tr td.rank.medal3 {
     background-color: #CD7F32;
     color: black;
 }
 
-:host .light .wrapper table.results tr td.totalRrank {
+:host div.wrapper.light table.results tr td.totalRrank {
     border-color: var(--lightTableBorders);
     color: white;
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.totalRank.medal1 {
+:host div.wrapper.light table.results tr td.totalRank.medal1 {
     background-color: gold;
     color: black;
     border-color: var(--lightTableBorders);
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.totalRank.medal2 {
+:host div.wrapper.light table.results tr td.totalRank.medal2 {
     background-color: silver;
     color: black;
     border-color: var(--lightTableBorders);
     border-width: 0.6em;
     border-style: solid;
 }
-:host .light .wrapper table.results tr td.totalRank.medal3 {
+:host div.wrapper.light table.results tr td.totalRank.medal3 {
     background-color: #CD7F32;
     color: black;
     border-color: var(--lightTableBorders);
@@ -232,7 +235,7 @@ table.medals {
         /* group */
         var(--startWidth)
         /* name */
-        minmax(35ch, 25%)
+        var(--nameWidth)
         /* category */
         var(--categoryWidth)
         /* birth */
@@ -240,7 +243,7 @@ table.medals {
         /* custom fields */
         var(--custom1Width) var(--custom2Width)
         /* team name */
-        minmax(min-content, 25%)
+        var(--clubWidth)
         /* snatch results */
         var(--spacerWidth)
         repeat(3, var(--liftResultWidth))
