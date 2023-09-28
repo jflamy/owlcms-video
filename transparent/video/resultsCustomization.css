@@ -4,15 +4,14 @@
      *************************/
     --pageBackgroundColor: #00ff00;
     --pageTextColor: white;
-    --leaderFillerHeight: 1fr;
 
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --tableFontSize: 2vh;
     --nameWidth: 1fr;
     --clubWidth: max-content;
     --tableWidthRatio: 90%;
+    --leaderFillerHeight: 1fr;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -41,6 +40,7 @@
     --rankWidth: var(--liftResultWidth);
     --rankVisibility: visible;
     --totalRankWidth: var(--liftResultWidth);
+    --totalRankVisibility: visible;
     
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
