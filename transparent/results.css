@@ -104,7 +104,8 @@ table.results {
 table.results.noranks {
     --rankWidth: 0;
     --rankVisibility: hidden;
-    --totalRankWidth: var(--rankWidth);
+    /* do not use rankWidth since we set it to 0 */
+    --totalRankWidth: var(--liftResultWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;

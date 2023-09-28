@@ -78,7 +78,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../../logos/sudamericana2.png');
+    background-image: url('../../../logos/left.png');
     /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
@@ -92,8 +92,8 @@
     align-items: center;
     justify-content: center;
     flex-grow: 0;
-    background-image: url('../../../logos/sajr2.png');
-    /*background-color:white;*/
+    background-image: url('../../../logos/right.png');
+    /* background-color:white; */
     background-size: contain;
     background-repeat: no-repeat;
     width: 80px;
@@ -125,7 +125,8 @@ table.results {
 table.results.noranks {
     --rankWidth: 0;
     --rankVisibility: hidden;
-    --totalRankWidth: var(--rankWidth);
+    /* do not use rankWidth since we set it to 0 */
+    --totalRankWidth: var(--liftResultWidth);
     --totalRankVisibility: visible;
     --totalWidth: var(--liftResultWidth);
     --totalVisibility: visible;

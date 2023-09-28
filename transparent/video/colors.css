@@ -171,8 +171,8 @@
 
     --darkRecordHighlightBackground: darkOrange;
     --darkRecordHighlightText: white;
-    --darkAttemptHighlightText: white;
-    --darkAttemptHighlightBackground: purple;
+    --darkAttemptHighlightText: var(--videoHeaderTextColor);
+    --darkAttemptHighlightBackground: var(--videoHeaderBackgroundColor);
 }
 
 @font-face {

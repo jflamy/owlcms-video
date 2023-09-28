@@ -33,7 +33,7 @@
     --custom2Width: 0;
     --custom2Visibility: hidden;
 
-    --rankWidth: var(--liftResultWidth);
+    --rankWidth: 6ch;
     --rankVisibility: visible;
     
     --bestWidth: var(--liftResultWidth);
@@ -67,19 +67,7 @@
     --rowSmallSpacerHeight: 0.25vh;
 }
 
-td.flags img {
-    height: 5vh;
-    margin: 1vh;
-    align-self: center;
-    border: 1px;
-    border-style: solid;
-}
-td.flags div {
-    height: 6vh;
-    line-height: 6vh;
-    align-self: center;
-    display: flex;
-}
+
 
 /* default for page */
 .wrapper {
@@ -99,11 +87,25 @@ td.flags div {
     line-height: unset;
 }
 
+td.flags div {
+    display: flex;
+}
+
 td.name.flags {
     font-size: 120%;
 }
 
-td.flags div {
+td.flags div.flags img {
+    height: 5vh;
+    margin: 1vh;
+    align-self: center;
+    border: 1px;
+    border-style: solid;
+}
+td.flags div.flags {
+    height: 6vh;
+    line-height: 6vh;
+    align-self: center;
     display: flex;
 }
 
@@ -119,46 +121,48 @@ td.flags div {
     background-color: var(--blockBackgroundColor);
     min-height: 1.5em;
 }
-:host .dark .wrapper table.results tr td.rank {
+
+:host div.wrapper.dark table.results tr td.rank {
     border-color: var(--darkEmptyBackgroundColor);
     color: white;
     border-width: 0.6em;
     border-style: solid;
 }
-:host .dark .wrapper table.results tr td.rank.medal1 {
+:host div.wrapper.dark table.results tr td.rank.medal1 {
     background-color: gold;
     color: black;
 }
-:host .dark .wrapper table.results tr td.rank.medal2 {
+:host div.wrapper.dark table.results tr td.rank.medal2 {
     background-color: silver;
     color: black;
 }
-:host .dark .wrapper table.results tr td.rank.medal3 {
+:host div.wrapper.dark table.results tr td.rank.medal3 {
     background-color: #CD7F32;
     color: black;
 }
 
-:host .dark .wrapper table.results tr td.totalRrank {
+:host div.wrapper.dark table.results tr td.totalRrank {
     border-color: var(--darkEmptyBackgroundColor);
     color: white;
     border-width: 0.6em;
     border-style: solid;
 }
-:host .dark .wrapper table.results tr td.totalRank.medal1 {
+
+:host div.wrapper.dark table.results tr td.totalRank.medal1 {
     background-color: gold;
     color: black;
     border-color: var(--darkEmptyBackgroundColor);
     border-width: 0.6em;
     border-style: solid;
 }
-:host .dark .wrapper table.results tr td.totalRank.medal2 {
+:host div.wrapper.dark table.results tr td.totalRank.medal2 {
     background-color: silver;
     color: black;
     border-color: var(--darkEmptyBackgroundColor);
     border-width: 0.6em;
     border-style: solid;
 }
-:host .dark .wrapper table.results tr td.totalRank.medal3 {
+:host div.wrapper.dark table.results tr td.totalRank.medal3 {
     background-color: #CD7F32;
     color: black;
     border-color: var(--darkEmptyBackgroundColor);
@@ -213,6 +217,48 @@ td.flags div {
     border-style: solid;
 }
 
+/* grid layout */
+table.medals {
+    /* do not use all available vertical space */
+    flex: 0;
+    display: grid;
+    border-collapse: collapse;
+    grid-template-columns:
+        /* group */
+        var(--startWidth)
+        /* name */
+        minmax(35ch, 25%)
+        /* category */
+        var(--categoryWidth)
+        /* birth */
+        var(--birthWidth)
+        /* custom fields */
+        var(--custom1Width) var(--custom2Width)
+        /* team name */
+        minmax(min-content, 25%)
+        /* snatch results */
+        var(--spacerWidth)
+        repeat(3, var(--liftResultWidth))
+        var(--bestWidth)
+        /* one snatch rank per category */
+        repeat(var(--nbRanks), var(--rankWidth))
+        /* clean&jerk */
+        var(--spacerWidth)
+        repeat(3, var(--liftResultWidth))
+        var(--bestWidth)
+        /* one snatch rank per category */
+        repeat(var(--nbRanks), var(--rankWidth))
+        /* total */
+        var(--spacerWidth)
+        repeat(1, var(--liftResultWidth))
+        /* one total rank per category */
+        repeat(var(--nbRanks), var(--totalRankWidth))
+        /* sinclair result */
+        var(--sinclairWidth)
+        /* sinclair ranks */
+        var(--sinclairRankWidth);
+}
+
 div > div > div.attemptBar {
     height: revert;
 }
@@ -225,3 +271,5 @@ div > div > div.attemptBar {
     color: var(--athleteNameColor);
     font-size: var(--athleteNameFontSize)
 }
+
+

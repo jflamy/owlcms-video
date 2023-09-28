@@ -11,6 +11,7 @@
     --tableFontSize: 2vh;
     --nameWidth: 1fr;
     --clubWidth: max-content;
+    --tableWidthRatio: 90%;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -29,8 +30,8 @@
     - change hidden to visible
     - set the width to value like 8ch 
     */
-    --birthWidth: 0;
-    --birthVisibility: hidden;
+    --birthWidth: 6ch;
+    --birthVisibility: visible;
     --custom1Width: 0;
     --custom1Visibility: hidden;
     --custom2Width: 0;
