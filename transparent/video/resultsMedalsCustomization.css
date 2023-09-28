@@ -8,6 +8,7 @@
     */
     --nameWidth: 35ch;
     --clubWidth: 10em;
+    --leaderFillerHeight: 0px;
     /* define this if you use acronyms and want flags to line up
        or if you have longer team names with flags and want them limited in length */
     --teamNameShortLength: 5ch;

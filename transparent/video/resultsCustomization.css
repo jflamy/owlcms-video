@@ -4,6 +4,7 @@
      *************************/
     --pageBackgroundColor: #00ff00;
     --pageTextColor: white;
+    --leaderFillerHeight: 1fr;
 
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
