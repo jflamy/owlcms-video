@@ -11,7 +11,7 @@
     --nameWidth: 1fr;
     --clubWidth: max-content;
     --tableWidthRatio: 90%;
-    --leaderFillerHeight: 1fr;
+    --defaultLeaderFillerHeight: 1.75em;
 
     /* left column width: adjust depending on how you name groups */
     --startWidth: 0em;
@@ -69,7 +69,7 @@
 
 .filler {
     background-color: var(--blockBackgroundColor);
-    min-height: 1.5em;
+    /* min-height: 1.5em; */
 }
 
 :host .light table.results {

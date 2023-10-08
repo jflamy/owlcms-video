@@ -8,7 +8,7 @@
     */
     --nameWidth: 35ch;
     --clubWidth: 10em;
-    --leaderFillerHeight: 0px;
+    --defaultLeaderFillerHeight: 0px;
     /* define this if you use acronyms and want flags to line up
        or if you have longer team names with flags and want them limited in length */
     --teamNameShortLength: 5ch;
@@ -127,7 +127,7 @@ td.flags div.flags {
 
 .filler {
     background-color: var(--blockBackgroundColor);
-    min-height: 1.5em;
+    /* min-height: 1.5em; */
 }
 
 :host div.wrapper.dark table.results tr td.rank {

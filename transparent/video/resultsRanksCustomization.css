@@ -104,7 +104,7 @@
 
 .filler {
     background-color: var(--blockBackgroundColor);
-    min-height: 1.5em;
+    /* min-height: 1.5em; */
 }
 td.flags div img {
     height: calc(var(--athleteNameFontSize)*0.8);
