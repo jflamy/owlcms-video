@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="144.95316"
+   height="128.29742"
+   version="1.1"
+   id="svg751"
+   sodipodi:docname="leftIWF4.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview753"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.3622047"
+     inkscape:cx="-13.235363"
+     inkscape:cy="64.24356"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg751" />
+  <defs
+     id="defs731">
+    <mask
+       id="cropMask">
+      <rect
+         x="0"
+         y="0"
+         width="254"
+         height="254"
+         fill="#ffffff"
+         id="rect722" />
+      <rect
+         x="0"
+         y="0"
+         width="63.5"
+         height="254"
+         fill="#000000"
+         id="rect724" />
+      <rect
+         x="0"
+         y="0"
+         width="254"
+         height="63.5"
+         fill="#000000"
+         id="rect726" />
+      <rect
+         x="0"
+         y="190.5"
+         width="254"
+         height="63.5"
+         fill="#000000"
+         id="rect728" />
+    </mask>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1542">
+      <rect
+         style="fill:#32ff00;stroke:#000000"
+         id="rect1544"
+         width="152.87589"
+         height="126.70258"
+         x="110.8267"
+         y="63.946133" />
+    </clipPath>
+  </defs>
+  <!-- Background circles -->
+  <g
+     mask="url(#cropMask)"
+     id="g749"
+     transform="translate(-109.73185,-62.851288)"
+     clip-path="url(#clipPath1542)">
+    <circle
+       cx="127"
+       cy="127"
+       r="113"
+       fill="#ffffff"
+       id="circle733" />
+    <circle
+       cx="127"
+       cy="127"
+       r="127"
+       fill="#ffffff"
+       fill-opacity="0.5"
+       id="circle735" />
+    <!-- IWF Logo scaled and positioned -->
+    <g
+       transform="matrix(0.202125,0,0,0.202125,110.14819,62.037025)"
+       id="g747">
+      <rect
+         x="142.39999"
+         y="432"
+         fill="#00b4f1"
+         width="37.400002"
+         height="139.3"
+         id="rect737" />
+      <polygon
+         fill="#00b4f1"
+         points="352.1,571.3 381,432 345.2,432 330.1,496.2 307.5,432 283.3,432 260.8,496.2 245.7,432 209.9,432 238.9,571.3 269.8,571.3 295.4,502.7 321,571.3 "
+         id="polygon739" />
+      <polygon
+         fill="#00b4f1"
+         points="439.1,462.5 499.6,462.5 499.6,432 404.8,432 404.8,571.4 439.1,571.4 439.1,517.5 490.7,517.5 490.7,487 439.1,487 "
+         id="polygon741" />
+      <path
+         fill="#00b4f1"
+         d="m 508.7,219.3 c 0,-0.1 0,-0.2 0,-0.2 0,-52.3 -28.4,-95.9 -74.2,-120 -21.4,-11.2 -44.7,-16 -63.4,-17.9 57.9,19.2 99.8,73.8 99.8,138.2 0,64.4 -41.8,119 -99.8,138.2 18.8,-1.9 42.1,-6.7 63.4,-17.9 45.8,-24.1 74.2,-67.7 74.2,-120 0,-0.2 0,-0.3 0,-0.4"
+         id="path743" />
+      <path
+         fill="#00b4f1"
+         d="m 322.8,219.3 c 0,23.1 -18.8,41.9 -41.9,41.9 -23.1,0 -41.9,-18.7 -41.9,-41.9 0,-23.1 18.7,-41.9 41.9,-41.9 23.1,0 41.9,18.8 41.9,41.9 m 106,0 C 428.8,137.6 362.6,71.4 280.9,71.4 199.2,71.4 133,137.6 133,219.3 c 0,81.7 66.2,147.9 147.9,147.9 81.7,0 147.9,-66.2 147.9,-147.9"
+         id="path745" />
+    </g>
+  </g>
+</svg>
