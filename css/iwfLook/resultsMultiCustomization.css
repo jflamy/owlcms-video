@@ -138,7 +138,7 @@ td.custom2 div {
     text-align: center;
 }
 
-td.good div.good {
+td.good div {
     background-color: white;
     padding: 3px;
     width: 100%;
@@ -160,7 +160,7 @@ tr.current td.fail div.fail {
     border-width: 1px;
 }
 
-td.fail div.fail {
+td.fail div {
     background-color: var(--FailBackgroundColor);;
     color: white;
     padding: 3px;
