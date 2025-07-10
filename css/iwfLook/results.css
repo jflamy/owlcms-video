@@ -2,7 +2,7 @@
 .wrapper {
     /* results table font size */
     --tableFontSize: 1.25rem;
-    --recordValueCellHeight: calc(var(--tableFontSize)*1.5);
+    --recordValueCellHeight: calc(var(--tableFontSize)*1.3);
     --recordsFontRatio: 0.9;
     --defaultLeaderFillerHeight: 1.75em;
     --bottomSpacerHeight: 0em;
@@ -80,7 +80,6 @@
 	border-width: 1px;
 	border-color: var(--videoHeaderBackgroundColor);;
 }
-
 
 .video .eventlogo {
     background-image: url('../../logos/leftASU.svg');
@@ -576,7 +575,7 @@ td {
     /* padding-bottom: 2px; */
     padding-block: 2px;
     border-style: none;
-    background: purple;
+	background: var(--TitleBackgroundColor);
     color: var(--TitleTextColor);
     border-color: var(--TableBorders);
 }
@@ -748,6 +747,8 @@ div.ellipsis {
     display: grid;
     grid-auto-flow: column;
     grid-auto-rows: max-content;
+    padding: 10px;
+    background-color: var(--EmptyBackgroundColor);
 }
 
 :host .recordBox {
@@ -795,8 +796,8 @@ div.ellipsis {
 :host .recordTitleBlock {
     grid-gap: 1px;
     display: grid;
-	grid-template-columns: repeat(1, min-content);
-	grid-template-rows: repeat(1, min-content);
+    grid-template-columns: repeat(1, min-content);
+    grid-template-rows: repeat(1, min-content);
     /* text-align: right; */
     text-align: end;
     align-items: stretch;
@@ -841,6 +842,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--RecordValueBackground);
     color: var(--RecordValueText);
+
 }
 :host .dark .recordCell {
     outline-width: var(--RecordCellBorderWidth);
@@ -850,6 +852,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--RecordValueBackground);
     color: var(--RecordValueText);
+	font-size: 115%
 }
 
 :host .light div.recordLiftType {
@@ -861,6 +864,8 @@ div.ellipsis {
     outline-width: var(--RecordCellBorderWidth);
     outline-color: var(--RecordBoxBorder);
     outline-style: solid;
+	font-size: 110%;
+	line-height: 110%;
 }
 
 :host .light span.recordLiftType {
@@ -916,6 +921,7 @@ div.ellipsis {
     line-height: var(--recordValueCellHeight);
     background-color: var(--RecordBoxBackground);
     color: var(--RecordBoxText);
+    font-size: 115%;
 }
 
 :host .light .recordName {
@@ -930,6 +936,7 @@ div.ellipsis {
     background-color: var(--RecordNameBackground);
     color: var(--RecordNameText);
     font-weight: bold;
+    font-size: 115%;
 }
 
 :host .light .recordTitle {

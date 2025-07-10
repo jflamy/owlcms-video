@@ -40,7 +40,7 @@
     --TextColor: white;
     --BackgroundColor: var(--EmptyBackgroundColor);
     --TitleTextColor: var(--TextColor);
-    --TitleBackgroundColor: var(--BackgroundColor);
+    --TitleBackgroundColor: purple;
     --CurrentTextColor: black;
     --CurrentBackgroundColor: gold;
     --NextTextColor: white;
@@ -76,8 +76,8 @@
     /* records table section, white on black */
     /* by default, same as black on white */
     --RecordBoxBorder: var(--pageTextColor);
-    --RecordBoxBackground: #4d4d4d;
-    --RecordBoxBorderWidth: medium;
+    --RecordBoxBackground: var(--EmptyBackgroundColor); /* #5a5a5a; */
+    --RecordBoxBorderWidth: thin;
     --RecordBoxText: var(--pageTextColor);
     --RecordCellBorderWidth: thin;
     --RecordCellBorderColor: var(--pageTextColor);
@@ -86,14 +86,14 @@
     --RecordValueText: var(--pageTextColor);
     --RecordValueBackground: var(--RecordBoxBackground);
     --RecordNameBackground: var(--blockBackgroundColor);
-    --RecordNameText: var(--RecordBoxBackground);
+    --RecordNameText: var(--pageTextColor);
     --RecordLiftTypeBackground: var(--EmptyBackgroundColor);
     --RecordLiftTypeText: var(--TextColor);
     --RecordLiftTypeBorder: var(--TextColor);
     --RecordHighlightBackground: darkOrange;
     --RecordHighlightText: white;
     --AttemptHighlightText: var(--videoHeaderTextColor);
-    --AttemptHighlightBackground: var(--videoHeaderBackgroundColor);
+    --AttemptHighlightBackground: var(--TitleBackgroundColor);
 }
 
 .light {
