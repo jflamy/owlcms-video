@@ -69,7 +69,7 @@
     --TotalBackgroundColor: #333333;
     --SpacerBackgroundColor: var(--blockBackgroundColor);
     --EmptyTextColor: #4d4d4d;
-    --EmptyBackgroundColor: #7f7f7f;
+    --EmptyBackgroundColor: #555555;
     --BestBackgroundColor: #555555;
     --BestTextColor: var(--TextColor);
 
