@@ -1,6 +1,6 @@
-/* green transparent page background, no stretching */
+
 * {
-    --pageBackgroundColor: transparent;
+    --pageBackgroundColor: black;
     --pageTextColor: white;
 }
 
@@ -35,7 +35,7 @@
 
 .dark {
     /* results table section, "white on black", most cells have same dark background as page */
-    --blockBackgroundColor: transparent;
+    --blockBackgroundColor: lightgrey;
     --TableBorders: var(--EmptyBackgroundColor);
     --TextColor: white;
     --BackgroundColor: var(--EmptyBackgroundColor);
