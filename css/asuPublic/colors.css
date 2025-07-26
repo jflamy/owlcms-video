@@ -85,7 +85,7 @@
     --RecordCatText: var(--pageTextColor);
     --RecordValueText: var(--pageTextColor);
     --RecordValueBackground: var(--RecordBoxBackground);
-    --RecordNameBackground: var(--blockBackgroundColor);
+    --RecordNameBackground: var(--RecordBoxBackground);
     --RecordNameText: var(--pageTextColor);
     --RecordLiftTypeBackground: var(--EmptyBackgroundColor);
     --RecordLiftTypeText: var(--TextColor);
