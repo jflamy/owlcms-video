@@ -35,7 +35,8 @@
 
 .dark {
     /* results table section, "white on black", most cells have same dark background as page */
-    --blockBackgroundColor: lightgrey;
+    /* --blockBackgroundColor: lightgrey; */
+    --blockBackgroundColor: transparent;
     --TableBorders: var(--EmptyBackgroundColor);
     --TextColor: white;
     --BackgroundColor: var(--EmptyBackgroundColor);
