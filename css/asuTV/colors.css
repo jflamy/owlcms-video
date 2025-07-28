@@ -1,7 +1,8 @@
-/* green transparent page background, no stretching */
+
 * {
     --pageBackgroundColor: transparent;
     --pageTextColor: white;
+    --pageBackgroundImage: none;
 }
 
 .wrapper {
@@ -35,7 +36,8 @@
 
 .dark {
     /* results table section, "white on black", most cells have same dark background as page */
-    --blockBackgroundColor: transparent;
+    /* --blockBackgroundColor: transparent; */
+	--blockBackgroundColor: rgb(211,211,211, 0.5);
     --TableBorders: var(--EmptyBackgroundColor);
     --TextColor: white;
     --BackgroundColor: var(--EmptyBackgroundColor);
@@ -67,7 +69,7 @@
     --TotalRankBackgroundColor: var(--BackgroundColor);
     --TotalTextColor: white;
     --TotalBackgroundColor: #333333;
-    --SpacerBackgroundColor: var(--blockBackgroundColor);
+    --SpacerBackgroundColor: transparent;
     --EmptyTextColor: #4d4d4d;
     --EmptyBackgroundColor: #555555;
     --BestBackgroundColor: #555555;
@@ -85,7 +87,7 @@
     --RecordCatText: var(--pageTextColor);
     --RecordValueText: var(--pageTextColor);
     --RecordValueBackground: var(--RecordBoxBackground);
-    --RecordNameBackground: var(--blockBackgroundColor);
+    --RecordNameBackground: var(--RecordBoxBackground);
     --RecordNameText: var(--pageTextColor);
     --RecordLiftTypeBackground: var(--EmptyBackgroundColor);
     --RecordLiftTypeText: var(--TextColor);

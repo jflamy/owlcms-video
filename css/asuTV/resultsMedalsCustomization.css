@@ -7,7 +7,7 @@
        for ease of understanding, sum of all fr columns should be 1.00.
     */
     --nameWidth: minmax(35ch, 0.75fr);
-    --clubWidth: minmax(10ch, 0.25fr);
+    --clubWidth: 6em;
     --defaultLeaderFillerHeight: 0px;
     /* define this if you use acronyms and want flags to line up
        or if you have longer team names with flags and want them limited in length

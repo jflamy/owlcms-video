@@ -3,7 +3,7 @@
        for ease of understanding, sum of all fr columns should be 1.00.
     */
     --nameWidth: 0.8fr;
-    --clubWidth: 0.2fr;
+    --clubWidth: 6.0em;
     --tableWidthRatio: 90%;
     --defaultLeaderFillerHeight: 1.75em;
 
