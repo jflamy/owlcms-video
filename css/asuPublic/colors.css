@@ -46,7 +46,8 @@
     --CurrentTextColor: black;
     --CurrentBackgroundColor: gold;
     --NextTextColor: white;
-    --NextBackgroundColor: var(--EmptyBackgroundColor);
+    --NextHighlightTextColor: white;
+    --NextBackgroundColor: gray;
     --RequestTextColor: silver;
     --RequestBackgroundColor: var(--EmptyBackgroundColor);
     --StartBackgroundColor: var(--BackgroundColor);

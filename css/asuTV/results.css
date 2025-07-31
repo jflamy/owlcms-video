@@ -447,10 +447,20 @@ table.results tr td.club div.clubName div.ellipsis {
 }
 
 /* next athlete colors */
-:host table.results tr td.next {
+:host table.results tr.next td {
     color: var(--NextTextColor);
     background-color: var(--NextBackgroundColor);
     font-weight: bold;
+    border: none
+}
+
+/* next athlete colors */
+:host table.results tr.next td div.name {
+    color: var(--NextHighlightTextColor, var(--NextTextColor));
+}
+/* next athlete colors */
+:host table.results tr.next td div.next {
+    color: var(--NextHighlightTextColor, var(--NextTextColor));
 }
 
 /* empty cells */
@@ -463,6 +473,13 @@ table.results tr td.club div.clubName div.ellipsis {
 :host table.results tr.current td.empty {
     color: var(--CurrentTextColor);
     background-color: var(--CurrentBackgroundColor);
+    font-weight: bold;
+    border: none;
+}
+
+:host table.results tr.next td.empty {
+    color: var(--NextTextColor);
+    background-color: var(--NextBackgroundColor);
     font-weight: bold;
     border: none;
 }
@@ -592,9 +609,10 @@ td {
 
 
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+  0% { opacity: 1; }  /* Fully visible */
+  75% { opacity: 1; }  /* Still fully visible for 75% of the duration */
+  76% { opacity: 0; }  /* Instantly invisible */
+  100% { opacity: 0; } /* Stays invisible for the remainder of the duration */
 }
 
 @keyframes changeColor {
