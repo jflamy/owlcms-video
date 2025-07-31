@@ -7,7 +7,7 @@
        for ease of understanding, sum of all fr columns should be 1.00.
     */
     --nameWidth: minmax(35ch, 0.75fr);
-    --clubWidth: 6em;
+    /* --clubWidth: min-content !important; */
     --defaultLeaderFillerHeight: 0px;
     /* define this if you use acronyms and want flags to line up
        or if you have longer team names with flags and want them limited in length
@@ -19,7 +19,7 @@
     --startVisibility: hidden;
     
     /* spacers */
-    --spacerWidth: 1vh;
+    --spacerWidth: 2em;
 
     /* normally these do not need to change */
     --categoryWidth: 10ch;
@@ -70,7 +70,6 @@
     --rowSmallSpacerHeight: 0;
 }
 :host .dark table.results {
-    --spacerWidth: 1vh;
     --rowSmallSpacerHeight: 0.25vh;
     --TotalBackgroundColor: var(--EmptyBackgroundColor);
 }
