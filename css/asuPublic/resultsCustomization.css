@@ -55,10 +55,18 @@
     --flagHeight: 2.7vh;
 }
 
+:host .light table.results {
+    /* --spacerWidth: 3vw; */
+    --rowSmallSpacerHeight: 0;
+}
+:host .dark table.results {
+    /* --spacerWidth: 3vw; */
+    --rowSmallSpacerHeight: 0.25vh; /* set to 0.25vh if transparent background */
+}
+
 .blockPositioningWrapper {
     background-color: var(--blockBackgroundColor);
     padding: 0.75em;
-    /* margin-top: 1em; */
     margin-block-start: 1em;
     flex-grow: 0;
 }
@@ -68,14 +76,6 @@
     /* min-height: 1.5em; */
 }
 
-:host .light table.results {
-    /* --spacerWidth: 3vw; */
-    --rowSmallSpacerHeight: 0;
-}
-:host .dark table.results {
-    /* --spacerWidth: 3vw; */
-    --rowSmallSpacerHeight: 0.25vh; /* set to 0.25vh if transparent background */
-}
 
 td.flags div img {
 	width: calc(var(--flagHeight)*1.3);
