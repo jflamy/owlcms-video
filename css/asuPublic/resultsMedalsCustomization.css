@@ -6,8 +6,8 @@
     /* variable-size columns. fr = free space after other columns have been allocated.
        for ease of understanding, sum of all fr columns should be 1.00.
     */
-    --nameWidth: minmax(35ch, 0.75fr);
-    /* --clubWidth: min-content !important; */
+    --nameWidth: minmax(40ch, 0.75fr);
+    /* --clubWidth: max-content !important; */
     --defaultLeaderFillerHeight: 0px;
     /* define this if you use acronyms and want flags to line up
        or if you have longer team names with flags and want them limited in length
@@ -46,7 +46,7 @@
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
-    --athleteNameFontSize: 4vh;
+    --athleteNameFontSize: 3vh;
     --groupInfoFontSize: 2.5vh;
 
     /* records */

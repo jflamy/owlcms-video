@@ -3,7 +3,7 @@
        for ease of understanding, sum of all fr columns should be 1.00.
     */
     --nameWidth: auto;
-    --clubWidth: 6.0em !important;
+    --clubWidth: max-content !important;
     --tableWidthRatio: 65%;
     --defaultLeaderFillerHeight: 1.75em;
 
@@ -38,7 +38,7 @@
 
     /* top part: current attempt information */
     --topRowFontSize: 3vh;
-    --athleteNameFontSize: 4vh;
+    --athleteNameFontSize: 3vh;
     --groupInfoFontSize: 2.5vh;
 
     /* records */
