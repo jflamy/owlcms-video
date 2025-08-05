@@ -31,10 +31,11 @@
     --custom2Width: 0;
     --custom2Visibility: hidden;
 
-    --rankWidth: var(--liftResultWidth);
+    --rankWidth: min-content;
     --rankVisibility: visible;
-    --totalRankWidth: var(--liftResultWidth);
+    --totalRankWidth: min-content;
     --totalRankVisibility: visible;
+
     --bestWidth: var(--liftResultWidth);
     --bestVisibility: visible;
 
@@ -56,6 +57,22 @@
 
     /* flag height */
     --flagHeight: 2.7vh;
+}
+
+table.results.ranks {
+    --rankWidth: min-content;
+    --rankVisibility: visible;
+}
+
+table.results.noranks {
+    --rankWidth: 0;
+    --rankVisibility: hidden;
+}
+
+table.results.totalRank {
+    /* do not use rankWidth since we set it to 0 */
+    --totalRankWidth: min-content;
+    --totalRankVisibility: visible;
 }
 
 :host .light table.results {
